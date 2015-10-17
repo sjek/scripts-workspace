@@ -6,21 +6,28 @@ partially copy pasting from from MSFD and wikis
 
 animation
 
-    playgroup
+    playgroup (code how different races are handled?)
   
 AI
 
-    setflee, -attack, -etc
+    setflee, -attack, -etc 
   
 movement
 
-    setangle
-    rotate
+    setangle 
+        
+        (workings ingame and via scripts)
+        
+    rotate 
   
 position
 
     coc, centeroncell
     coe, centeronexterior
-    position
+        (interior and exterior behaviour + bygone falling dmg bug)
+    position 
+        (effect of water and groundlevel on behavior)
     placeatpc
+        (safeguards on bad placement? non vanilla)
+        
     ......
