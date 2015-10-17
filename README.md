@@ -32,4 +32,24 @@ position
     placeatpc
         (safeguards on bad placement? non vanilla)
         
-    ......
+
+messsagebox
+
+    behavior at different tages
+        on screen
+        script
+        dialogue
+        multiples (almost impossible to detect on runtime)
+        interaction with getbuttonpressed 
+        while loop (state machine?)
+
+if
+
+elseif
+
+while
+
+    handling after script has ran wholly due to frame checking
+......
+
+unittest ?
