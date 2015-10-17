@@ -12,7 +12,7 @@ animation
 AI
 
     setflee, -attack, -etc 
-        distance dependancy?
+        (distance dependancy?)
   
 movement
 
