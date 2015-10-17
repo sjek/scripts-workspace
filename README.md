@@ -6,11 +6,13 @@ partially copy pasting from from MSFD and wikis
 
 animation
 
-    playgroup (code how different races are handled?)
+    playgroup 
+        (code how different races are handled?)
   
 AI
 
     setflee, -attack, -etc 
+        distance dependancy?
   
 movement
 
