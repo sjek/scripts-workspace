@@ -5,18 +5,18 @@ partially copy pasting from from MSFD and wikis
 
 
 animation
-  playgroup
+    playgroup
   
 AI
-  setflee, -attack, -etc
+    setflee, -attack, -etc
   
 movement
-  setangle
-  rotate
+    setangle
+    rotate
   
 position
-  coc, centeroncell
-  coe, centeronexterior
-  position
-  placeatpc
-  ......
+    coc, centeroncell
+    coe, centeronexterior
+    position
+    placeatpc
+    ......
