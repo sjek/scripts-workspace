@@ -21,6 +21,8 @@ movement
         (workings ingame and via scripts)
         
     rotate 
+    rotateworld 
+        (difference in local and global rotation in openmw?)
   
 position
 
@@ -50,6 +52,7 @@ elseif
 while
 
     handling after script has ran wholly due to frame checking
+    
 ......
 
 unittest ?
