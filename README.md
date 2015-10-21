@@ -45,8 +45,10 @@ movement
         difference in local and global rotation in openmw?
   
 position
--interior and exterior behaviour when using underground, outside or in allowed space
--if something fails, player is teleported to coe 0,0 , daedric ruin with scamp running around
+
+    -interior and exterior behaviour when using underground, outside or in allowed space
+    -if something fails, player is teleported to coe 0,0 , daedric ruin with scamp running around
+    
 
     coe, centeronexterior and coc, centeroncell
         -don't copy the height info when teleporting causing possible death on ground level
