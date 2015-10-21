@@ -12,6 +12,7 @@ animation
 
     playgroup 
         -is the same behavior for 1st and 3rd person view (npc and player alike) referred
+        -don't loop animations with no loop keys (revision 8bc7eb55)(2223)(2304)
   
 AI
 
