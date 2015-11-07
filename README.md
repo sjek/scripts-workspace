@@ -57,7 +57,7 @@ AI
         
         TEST : creatures?
 
-check functions
+check variables
 
     onpcequip
         -check after item is equipped to prevent stack contamination (2969)
@@ -130,20 +130,30 @@ messsagebox
         
     dialogue
     
+inventory related
+
+    addsoulgem, creature, soulgem
+        
+        vanilla: referencded soulgem need to be in target inventory for function to work 
+        openmw: adds soulgem if not alredy in inventory
+        
 
 if
+
+    no nested if / elseif limit like in vanilla or script lenght for that matter   
 
 elseif
 
 while
 
-    will execute after whole script is run due to structure
-......
-
-unittest ?
+    will execute after whole script is run once due to structure 
+    preventing getting getbuttonpressed from inside while loop for if condition 
 
 
-requests:
+unittest 
+
+
+requests: (wishlist)
 
 unequip like function / disable / setdelete on worn items (2960)
 
