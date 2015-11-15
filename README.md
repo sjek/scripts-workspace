@@ -65,12 +65,13 @@ check variables
         -don't set onpcequip for items that failed to equip (revision 992b7703)
             revent's walse alarm in worn item check (2776)
         -use on equip function (revision c04a8afc)
+        -run the script after setting OnPcEquip, but before actually equipping the item to allow setting onPCskipequip             (Bug #3016) not exactly right bug (mentions)
         
         revision 7983b07b (bk_treasurereport script)
             check also on using enchanted (any) items
             pcskipeguip variable handling ( 1 = skip equipping, 0 = allow )
-            execute item script once immediately after setting onpceguip
-            bypass after skipped with pcskipequip and pcskipequip set to 0 + equip (same script?)
+            execute item script once, immediately after getting onpceguip
+            bypass after skipped with pcskipequip and pcskipequip set to 0 allowing afterhand equip (same script?)
 
 movement
 
