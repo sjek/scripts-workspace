@@ -8,7 +8,6 @@ activate
     can force player activation on ID by activate, player (vanilla usage without unload cell reference)(2099)
         
     not restricted inside if (onactivate == 1) as in vanilla (needs checking)
-    something testing testing
 
 animation
 
