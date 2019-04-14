@@ -1,4 +1,4 @@
-Welcome to openmw mwscript's documentation!
+Alphacedical function list
 ===========================================
 
 this
@@ -7,4 +7,12 @@ this
    :maxdepth: 3
    :caption: Table of Contents:
 
-   Activate.rst
+   A/index
+   B/index
+   C/index
+   D/index
+   E/index
+   F/index
+   G/index
+   H/index
+   I/index
