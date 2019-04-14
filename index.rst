@@ -14,3 +14,5 @@ this
 
    Alphacedical Scripting functions/index
    readme.rst
+   vanilla script functions uesp wiki.rst
+   engine MCP features.rst

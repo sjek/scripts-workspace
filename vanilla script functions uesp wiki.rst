@@ -1,10 +1,14 @@
+
+UESP
+=====
+
 http://www.uesp.net/wiki/Tes3Mod:Categorical_Function_List
 
 AI
   AIactivate
-    
+
   AIescort
-    
+
   AIescortcell
   AIfollow
   AIfollowcell
@@ -13,14 +17,14 @@ AI
   GetAIpackagedone
   GetCurrentAIpackage
   Getdetected
-  
+
 Animation
-  
+
   loopgroup
   playgroup
   Playbink
   Skipanim
-  
+
 Bloodmoon
 
   Becomewerewolf
@@ -35,24 +39,24 @@ Bloodmoon
   TurnMoonRed
   TurnMoonWhite
   UndoWerewolf
-  
+
 Character
-  
+
   enableBirthMenu
   enableClassMenu
   enableNameMenu
   enableRaceMneu
   enableStatRewievMenu
-  
+
 Collision
 
   GetCollidingActor   (tribunal)
   GetCollidingPC      (tribunal)
   HurtCollidingActor  (tribunal)
   HurtStandingActor
-  
+
 Combat
-  
+
   GetTarget
   HitAttempOnMe
   HitOnMe
@@ -61,7 +65,7 @@ Combat
   OnMurder
   StartCombat
   StopCombat
-  
+
 Console
 
   BetaComment       (BC)
@@ -91,6 +95,3 @@ Console
   ToggleAI          (tai)
   ToggleBorders     (tb)
   ToggleColiision   (tcl)
-  
-  
-  
