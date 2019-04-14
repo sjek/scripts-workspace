@@ -1,0 +1,347 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Readme &mdash; openmw mwscript  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Activate" href="Alphacedical Scripting functions/Activate.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> openmw mwscript
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Alphacedical Scripting functions/index.html">Welcome to openmw mwscript’s documentation!</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Readme</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">openmw mwscript</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Readme</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/readme.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="readme">
+<h1>Readme<a class="headerlink" href="#readme" title="Permalink to this headline">¶</a></h1>
+<p>morrowind scripts categorized and writes</p>
+<p>partially copy pasting from from MSFD and wikis</p>
+<p>activate</p>
+<blockquote>
+<div><p>can force player activation on ID by activate, player (vanilla usage without unload cell reference)(2099)</p>
+<p>not restricted inside if (onactivate == 1) as in vanilla (needs checking)</p>
+</div></blockquote>
+<p>animation</p>
+<blockquote>
+<div><dl>
+<dt>playgroup, gruop</dt><dd><p>plays the animation group in kf file applying it to function target</p>
+<p>is the same behavior for 1st and 3rd person view (npc and player alike) referred</p>
+<p>don’t loop animations with no loop keys (revision 8bc7eb55)(2223)(2304)</p>
+</dd>
+</dl>
+<p>LoopGroup</p>
+</div></blockquote>
+<p>AI</p>
+<blockquote>
+<div><dl>
+<dt>setflee, -attack, -etc</dt><dd><p>(distance dependancy?)</p>
+</dd>
+<dt>getAIpackagedone</dt><dd><p>return 1 if the package is done
+vanilla/openmw repair: returns value when next package is called to bypass skipped frame.</p>
+</dd>
+<dt>startcombat, target</dt><dd><p>starts the comnat with given target</p>
+<blockquote>
+<div><dl class="simple">
+<dt>vanilla: in scripts only works to existing references and first found target.</dt><dd><p>also placeatme and placeatpc are untargetable</p>
+</dd>
+</dl>
+<p>works in console
+workaround to place reference to somewhere and use positiocell when needed</p>
+<p>openmw: striggering when the id is found ingame (ie. not giving error of unfound id before)
+should be possible as position needs unique id, but could overlap if the position from other cell is
+anyway used. leading to fix for referencing any id in any cell interfere.</p>
+<p>placeatpc and placeatme could also be used in mod as way to safeguard from one from dublicate id
+otherwise after 1.0 it could be fixed with keywork to handle multiple targets and so on out of the bucket</p>
+<p>TEST : current status</p>
+</div></blockquote>
+</dd>
+<dt>equip, objectID</dt><dd><p>equips the given item in the owner inventory</p>
+<p>vanilla: works randomly differing in script and console ie. potions and armors, repair hammers and such</p>
+<p>openmw: should work without problems.</p>
+<p>TEST : creatures?</p>
+</dd>
+</dl>
+</div></blockquote>
+<p>check variables</p>
+<blockquote>
+<div><dl>
+<dt>onpcequip</dt><dd><p>-check after item is equipped to prevent stack contamination (2969)
+-working with addfunctions inside menumode + realtime updating screens (2967)
+-don’t set onpcequip for items that failed to equip (revision 992b7703)</p>
+<blockquote>
+<div><p>revent’s walse alarm in worn item check (2776)</p>
+</div></blockquote>
+<p>-use on equip function (revision c04a8afc)
+-run the script after setting OnPcEquip, but before actually equipping the item to allow setting onPCskipequip             (Bug #3016) not exactly right bug (mentions)</p>
+<dl class="simple">
+<dt>revision 7983b07b (bk_treasurereport script)</dt><dd><p>check also on using enchanted (any) items
+pcskipeguip variable handling ( 1 = skip equipping, 0 = allow )
+execute item script once, immediately after getting onpceguip
+bypass after skipped with pcskipequip and pcskipequip set to 0 allowing afterhand equip (same script?)</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</div></blockquote>
+<p>movement</p>
+<blockquote>
+<div><dl class="simple">
+<dt>setangle, axis, angle</dt><dd><p>workings ingame and via scripts?</p>
+</dd>
+<dt>getangle, axis</dt><dd><p>returns the angle in relation to given world axis</p>
+</dd>
+<dt>rotate, axis, speed</dt><dd><p>reference’s axis</p>
+</dd>
+<dt>rotateworld, axis, speed</dt><dd><p>global axis</p>
+</dd>
+</dl>
+<p>difference in local and global rotation in openmw?</p>
+<dl class="simple">
+<dt>face, target</dt><dd><p>makes the npc face the desired target</p>
+</dd>
+</dl>
+</div></blockquote>
+<p>position</p>
+<blockquote>
+<div><p>-interior and exterior behaviour when using underground, outside or in allowed space
+-if something fails, player is teleported to coe 0,0 , daedric ruin with scamp running around</p>
+<dl>
+<dt>coe, centeronexterior and coc, centeroncell</dt><dd><p>-don’t copy the height info when teleporting causing possible death on ground level</p>
+</dd>
+<dt>position</dt><dd><p>effect of water and groundlevel on behavior</p>
+</dd>
+<dt>positioncell</dt><dd><p>places the reference inside the cell into given coordinates</p>
+<blockquote>
+<div><p>vanilla: buggy. accepting float variables is picky and moving object from far away cell
+is not guaranteed to load + arbitary move can cause crash on activation</p>
+<p>openmw: should work right out of the bucket with variables and loading + script execution</p>
+</div></blockquote>
+</dd>
+<dt>placeatpc, ID, distance, direction</dt><dd><p>places given object</p>
+</dd>
+<dt>fixme unimplemented (1421)</dt><dd><p>hard to detect collision at random relocation</p>
+</dd>
+</dl>
+</div></blockquote>
+<p>messsagebox</p>
+<blockquote>
+<div><dl class="simple">
+<dt>behavior at different tages</dt><dd><p>on screen
+script
+dialogue
+multiples (almost impossible to detect on runtime)</p>
+</dd>
+</dl>
+<p>getbuttonpressed</p>
+<p>dialogue</p>
+</div></blockquote>
+<p>inventory related</p>
+<blockquote>
+<div><p>addsoulgem, creature, soulgem</p>
+<blockquote>
+<div><p>vanilla: referencded soulgem need to be in target inventory for function to work
+openmw: adds soulgem if not alredy in inventory</p>
+</div></blockquote>
+</div></blockquote>
+<p>if</p>
+<blockquote>
+<div><p>no nested if / elseif limit like in vanilla or script lenght for that matter</p>
+</div></blockquote>
+<p>elseif</p>
+<p>while</p>
+<blockquote>
+<div><p>will execute after whole script is run once due to structure
+preventing getting getbuttonpressed from inside while loop for if condition</p>
+</div></blockquote>
+<p>unittest</p>
+<p>requests: (wishlist)</p>
+<p>unequip like function / disable / setdelete on worn items (2960)</p>
+<blockquote>
+<div><p>base scripts need removeitem and additem for all similar content in
+inventory losing script variable data, nonunique reference being unrefencelable</p>
+</div></blockquote>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="Alphacedical Scripting functions/Activate.html" class="btn btn-neutral float-left" title="Activate" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, sjek
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
