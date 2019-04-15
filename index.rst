@@ -9,8 +9,10 @@ Welcome to openmw mwscript's documentation!
 this
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :caption: Table of Contents:
 
    Alphacedical Scripting functions/index
    readme.rst
+   vanilla script functions uesp wiki.rst
+   engine MCP features.rst
