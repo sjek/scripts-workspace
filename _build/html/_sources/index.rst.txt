@@ -9,7 +9,7 @@ Welcome to openmw mwscript's documentation!
 this
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :caption: Table of Contents:
 
    Alphacedical Scripting functions/index
