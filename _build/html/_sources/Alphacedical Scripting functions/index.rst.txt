@@ -15,4 +15,3 @@ this
    F/index
    G/index
    H/index
-   I/index
