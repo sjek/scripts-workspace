@@ -1,0 +1,2 @@
+EnableBirthMenu; EnableClassMenu; EnableNameMenu, EnableRaceMenu, EnableStatReviewMenu, EnableStatsMenu
+==========================================================================================================

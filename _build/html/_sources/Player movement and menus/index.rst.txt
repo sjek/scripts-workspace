@@ -7,6 +7,11 @@ this
    :maxdepth: 2
    :caption: Table of Contents:
 
+   Menus/index
+   Actions/index
+   Movement/index
+
+   
    DisableLevitation
    DisablePlayerControls
    DisablePlayerFighting
@@ -17,27 +22,14 @@ this
    DisableTeleporting
    DisableVanityMode
 
+   EnableLevitation
+   EnablePlayerControls
+   EnablePlayerFighting
+   EnablePlayerJumping
+   EnablePlayerLooking
+   EnablePlayerMagic
+   EnablePlayerViewSwitch
+   EnableTeleporting
+   EnableVanityMode
 
-EnableLevitation
-EnablePlayerControls
-EnablePlayerFighting
-EnablePlayerJumping
-EnablePlayerLooking
-EnablePlayerMagic
-EnablePlayerViewSwitch
-EnableTeleporting
-EnableVanityMode
-
-
-EnableBirthMenu Undocumented
-EnableClassMenu Undocumented
-EnableInventoryMenu Undocumented
-EnableLevelupMenu Undocumented
-EnableMagicMenu Undocumented
-EnableMapMenu Undocumented
-EnableNameMenu Undocumented
-EnableRaceMenu Undocumented
-EnableStatReviewMenu Undocumented
-EnableStatsMenu Undocumented
-
-EnableRest
+   EnableRest

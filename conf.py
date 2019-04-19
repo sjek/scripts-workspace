@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'openmw mwscript'
-copyright = '2019, sjek'
+copyright = 'CC0'
 author = 'sjek'
 
 
