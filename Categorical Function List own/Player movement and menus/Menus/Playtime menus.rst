@@ -1,0 +1,4 @@
+Playtime menus:
+============================================================================================
+ EnableInventoryMenu, EnableLevelupMenu, EnableMagicMenu, EnableMapMenu
+ 
