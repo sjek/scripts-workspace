@@ -1,3 +1,0 @@
-Chargen menus: 
-=========================================================================================================================
-EnableBirthMenu, EnableClassMenu, EnableNameMenu, EnableRaceMenu, EnableStatReviewMenu, EnableStatsMenu
