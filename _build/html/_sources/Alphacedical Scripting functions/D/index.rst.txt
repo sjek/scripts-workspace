@@ -10,5 +10,15 @@ this
    Day (global)
    DaysPassed (Global)
    Disable
+
+   DisableLevitation <EnableDisableCommands>
+   DisablePlayerControls <EnableDisableCommands>
+   DisablePlayerFighting <EnableDisableCommands>
+   DisablePlayerJumping <EnableDisableCommands>
+   DisablePlayerLooking <EnableDisableCommands>
+   DisablePlayerMagic <EnableDisableCommands>
+   DisablePlayerViewSwitch <EnableDisableCommands>
+   DisableTeleporting <EnableDisableCommands>
+
    Drop
    DropSoulGem
