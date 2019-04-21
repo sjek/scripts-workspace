@@ -2,7 +2,7 @@ Script-workspace
 ======================
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 4
 
 
    Categorical Function List own/index
