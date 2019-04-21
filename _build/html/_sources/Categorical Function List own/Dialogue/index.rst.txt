@@ -1,4 +1,4 @@
-Dislogue
+Dialogue
 ===========================================
 
 Alhought dialogue result screen scripting is a topic of it's own.
