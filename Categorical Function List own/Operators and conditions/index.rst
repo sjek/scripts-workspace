@@ -1,11 +1,8 @@
 Operators and conditions
 ===========================================
 
-this
-
 .. toctree::
    :maxdepth: 2
-   :caption: Table of Contents:
 
        Begin     <Commands>
        End       <Commands>

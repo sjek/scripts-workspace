@@ -1,2 +1,2 @@
-EnablePlayerFighting / DisablePlayerFighting
+Fightings
 ===============================================
