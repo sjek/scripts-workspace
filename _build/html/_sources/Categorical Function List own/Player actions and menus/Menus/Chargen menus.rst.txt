@@ -1,2 +1,2 @@
-----Chargen menus----
+Chargen menus
 ======================

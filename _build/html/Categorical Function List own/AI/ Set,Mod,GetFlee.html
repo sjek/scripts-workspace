@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>————; &mdash; openmw mwscript  documentation</title>
+  <title>SetFlee &mdash; openmw mwscript  documentation</title>
   
 
   
@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Alarm" href="Alarm.html" />
-    <link rel="prev" title="————;" href=" Set,Mod,GetFight.html" /> 
+    <link rel="next" title="SetAlarm" href=" Set,Mod,GetAlarm.html" />
+    <link rel="prev" title="SetFight" href=" Set,Mod,GetFight.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -83,34 +83,33 @@
               <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Categorical Function List own</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">AI</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="AiFollowing.html"> AIEscort</a></li>
-<li class="toctree-l3"><a class="reference internal" href="AiFollowing.html"> AIEscortCell</a></li>
-<li class="toctree-l3"><a class="reference internal" href="AiFollowing.html"> AIFollow</a></li>
-<li class="toctree-l3"><a class="reference internal" href="AiFollowing.html"> AIFollowCell</a></li>
-<li class="toctree-l3"><a class="reference internal" href="AiCommands.html"> AIActivate</a></li>
-<li class="toctree-l3"><a class="reference internal" href="AiCommands.html"> AITravel</a></li>
-<li class="toctree-l3"><a class="reference internal" href="AiCommands.html"> AIWander</a></li>
-<li class="toctree-l3"><a class="reference internal" href="AiState.html"> GetAIPackageDone</a></li>
-<li class="toctree-l3"><a class="reference internal" href="AiState.html"> GetCurrentAIPackage</a></li>
-<li class="toctree-l3"><a class="reference internal" href="AiState.html"> ToggleAi, Tai</a></li>
-<li class="toctree-l3"><a class="reference internal" href="AiDetection.html"> GetDetected</a></li>
-<li class="toctree-l3"><a class="reference internal" href="AiDetection.html"> GetLineOfSight, GetLos</a></li>
-<li class="toctree-l3"><a class="reference internal" href="AiCombat.html"> StartCombat</a></li>
-<li class="toctree-l3"><a class="reference internal" href="AiCombat.html"> StopCombat</a></li>
-<li class="toctree-l3"><a class="reference internal" href="AiCombat.html"> GetTarget</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Hello.html"> SetHello</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Hello.html"> ModHello</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Hello.html"> GetHello</a></li>
-<li class="toctree-l3"><a class="reference internal" href=" Set,Mod,GetFight.html">————;</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">————;</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#setflee">SetFlee</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#modflee">ModFlee</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#getflee">GetFlee</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Alarm.html"> SetAlarm</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Alarm.html"> ModAlarm</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Alarm.html"> GetAlarm</a></li>
+<li class="toctree-l3"><a class="reference internal" href=" AiFollowcommands.html">AiFollow</a></li>
+<li class="toctree-l3"><a class="reference internal" href=" AiFollowcommands.html#aifollowcell">AiFollowCell</a></li>
+<li class="toctree-l3"><a class="reference internal" href=" AiFollowcommands.html#aiescort">AiEscort</a></li>
+<li class="toctree-l3"><a class="reference internal" href=" AiFollowcommands.html#aiescortcell">AiEscortCell</a></li>
+<li class="toctree-l3"><a class="reference internal" href=" AiCommands.html">AIActivate</a></li>
+<li class="toctree-l3"><a class="reference internal" href=" AiCommands.html#aitravel">AITravel</a></li>
+<li class="toctree-l3"><a class="reference internal" href=" AiCommands.html#aiwander">AIWander</a></li>
+<li class="toctree-l3"><a class="reference internal" href=" AiState.html">GetAIPackageDone</a></li>
+<li class="toctree-l3"><a class="reference internal" href=" AiState.html#getcurrentaipackage">GetCurrentAIPackage</a></li>
+<li class="toctree-l3"><a class="reference internal" href=" AiState.html#toggleai-tai">ToggleAi, Tai</a></li>
+<li class="toctree-l3"><a class="reference internal" href=" AiDetection.html">GetDetected</a></li>
+<li class="toctree-l3"><a class="reference internal" href=" AiDetection.html#getlineofsight-getlos">GetLineOfSight, GetLos</a></li>
+<li class="toctree-l3"><a class="reference internal" href=" AiCombat.html">StartCombat</a></li>
+<li class="toctree-l3"><a class="reference internal" href=" AiCombat.html#stopcombat">StopCombat</a></li>
+<li class="toctree-l3"><a class="reference internal" href=" AiCombat.html#gettarget">GetTarget</a></li>
+<li class="toctree-l3"><a class="reference internal" href=" Set,Mod,GetHello.html">SetHello</a></li>
+<li class="toctree-l3"><a class="reference internal" href=" Set,Mod,GetHello.html#modhello">ModHello</a></li>
+<li class="toctree-l3"><a class="reference internal" href=" Set,Mod,GetHello.html#gethello">GetHello</a></li>
+<li class="toctree-l3"><a class="reference internal" href=" Set,Mod,GetFight.html">SetFight</a></li>
+<li class="toctree-l3"><a class="reference internal" href=" Set,Mod,GetFight.html#modfight">ModFight</a></li>
+<li class="toctree-l3"><a class="reference internal" href=" Set,Mod,GetFight.html#getfight">GetFight</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">SetFlee</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modflee">ModFlee</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getflee">GetFlee</a></li>
+<li class="toctree-l3"><a class="reference internal" href=" Set,Mod,GetAlarm.html">SetAlarm</a></li>
+<li class="toctree-l3"><a class="reference internal" href=" Set,Mod,GetAlarm.html#modalarm">ModAlarm</a></li>
+<li class="toctree-l3"><a class="reference internal" href=" Set,Mod,GetAlarm.html#getalarm">GetAlarm</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Dialogue/index.html">Dialogue</a></li>
@@ -170,7 +169,7 @@
         
           <li><a href="index.html">AI</a> &raquo;</li>
         
-      <li>————;</li>
+      <li>SetFlee</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -189,17 +188,14 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="id1">
-<h1>————;<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="setflee">
-<h2>SetFlee<a class="headerlink" href="#setflee" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="setflee">
+<h1>SetFlee<a class="headerlink" href="#setflee" title="Permalink to this headline">¶</a></h1>
 </div>
 <div class="section" id="modflee">
-<h2>ModFlee<a class="headerlink" href="#modflee" title="Permalink to this headline">¶</a></h2>
+<h1>ModFlee<a class="headerlink" href="#modflee" title="Permalink to this headline">¶</a></h1>
 </div>
 <div class="section" id="getflee">
-<h2>GetFlee<a class="headerlink" href="#getflee" title="Permalink to this headline">¶</a></h2>
-</div>
+<h1>GetFlee<a class="headerlink" href="#getflee" title="Permalink to this headline">¶</a></h1>
 </div>
 
 
@@ -210,10 +206,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="Alarm.html" class="btn btn-neutral float-right" title="Alarm" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href=" Set,Mod,GetAlarm.html" class="btn btn-neutral float-right" title="SetAlarm" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href=" Set,Mod,GetFight.html" class="btn btn-neutral float-left" title="————;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href=" Set,Mod,GetFight.html" class="btn btn-neutral float-left" title="SetFight" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

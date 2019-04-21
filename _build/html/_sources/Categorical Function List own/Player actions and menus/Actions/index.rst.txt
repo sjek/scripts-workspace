@@ -2,14 +2,17 @@ Actions
 ===========================================
 
 DisableVanityMode
-EnableVanityMode
+EnableVanityMode    are not implemented
 
 .. toctree::
    :maxdepth: 2
-   :caption: Table of Contents:
 
-   EnableLevitation, DisableLevitation
-   EnablePlayerMagic, DisablePlayerMagic
-   EnablePlayerFighting, DisablePlayerFighting
-   EnableTeleporting, DisableTeleporting
+   EnableLevitation      <Levitations>
+   DisableLevitation     <Levitations>
+   EnablePlayerMagic     <Magics>
+   DisablePlayerMagic    <Magics>
+   EnablePlayerFighting  <Fightings>
+   DisablePlayerFighting <Fightings>
+   EnableTeleporting     <Teleporting>
+   DisableTeleporting    <Teleporting>
    EnableRest
