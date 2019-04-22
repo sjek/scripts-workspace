@@ -4,7 +4,14 @@ Movement
 .. toctree::
    :maxdepth: 2
 
-   EnablePlayerControls, DisablePlayerControls
-   EnablePlayerJumping, DisablePlayerJumping
-   EnablePlayerLooking, DisablePlayerLooking
-   EnablePlayerViewSwitch, DisablePlayerViewSwitch
+   EnablePlayerControls <PlayerControls>
+   DisablePlayerControls <PlayerControls>
+
+   EnablePlayerJumping <PlayerJumping>
+   DisablePlayerJumping <PlayerJumping>
+
+   EnablePlayerLooking <PlayerLooking>
+   DisablePlayerLooking <PlayerLooking>
+
+   EnablePlayerViewSwitch <PlayerViewSwitch>
+   DisablePlayerViewSwitch <PlayerViewSwitch>

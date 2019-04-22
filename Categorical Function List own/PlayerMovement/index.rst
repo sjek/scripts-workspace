@@ -1,0 +1,17 @@
+PlayerMovement
+===========================================
+
+.. toctree::
+   :maxdepth: 2
+
+   EnablePlayerControls      <PlayerControls>
+   DisablePlayerControls     <PlayerControls>
+
+   EnablePlayerJumping       <PlayerJumping>
+   DisablePlayerJumping      <PlayerJumping>
+
+   EnablePlayerLooking       <PlayerLooking>
+   DisablePlayerLooking      <PlayerLooking>
+
+   EnablePlayerViewSwitch    <PlayerViewSwitch>
+   DisablePlayerViewSwitch   <PlayerViewSwitch>

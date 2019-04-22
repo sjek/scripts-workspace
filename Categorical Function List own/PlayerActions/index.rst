@@ -1,0 +1,22 @@
+PlayerActions
+===========================================
+
+DisableVanityMode
+EnableVanityMode    are not implemented
+
+.. toctree::
+   :maxdepth: 2
+
+   EnableLevitation      <Levitations>
+   DisableLevitation     <Levitations>
+
+   EnablePlayerMagic     <Magics>
+   DisablePlayerMagic    <Magics>
+
+   EnablePlayerFighting  <Fightings>
+   DisablePlayerFighting <Fightings>
+
+   EnableTeleporting     <Teleporting>
+   DisableTeleporting    <Teleporting>
+
+   EnableRest
