@@ -1,2 +1,0 @@
-EnablePlayerJumping / DisablePlayerJumping
-==========================================

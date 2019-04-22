@@ -9,10 +9,14 @@ EnableVanityMode    are not implemented
 
    EnableLevitation      <Levitations>
    DisableLevitation     <Levitations>
+
    EnablePlayerMagic     <Magics>
    DisablePlayerMagic    <Magics>
+
    EnablePlayerFighting  <Fightings>
    DisablePlayerFighting <Fightings>
+
    EnableTeleporting     <Teleporting>
    DisableTeleporting    <Teleporting>
+   
    EnableRest
