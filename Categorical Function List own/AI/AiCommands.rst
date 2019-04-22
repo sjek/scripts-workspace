@@ -1,13 +1,11 @@
 
-
-
-GetAIPackageDone
+AIActivate
 ---------------------------------
 
 
-GetCurrentAIPackage
+AITravel
 ---------------------------------
 
 
-ToggleAi, Tai
+AIWander
 ---------------------------------
