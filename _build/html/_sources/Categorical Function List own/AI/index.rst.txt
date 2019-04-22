@@ -5,20 +5,38 @@ AI
    :maxdepth: 1
 
 
-    AiFollowcommands
+    AiFollow       <AiFollowcommands>
+    AiFollowCell   <AiFollowcommands>
+    AiEscort       <AiFollowcommands>
+    AiEscortCell   <AiFollowcommands>
 
-    AiCommands
+    GetAIPackageDone       <AiExecutionState>
+    GetCurrentAIPackage    <AiExecutionState>
+    ToggleAi, Tai          <AiExecutionState>
 
-    AiState
+    GetDetected            <AiDetection>
+    GetLineOfSight, GetLos <AiDetection>
 
-    AiDetection
+    AIActivate     <AiCommands>
+    AITravel       <AiCommands>
+    AIWander       <AiCommands>
 
-    AiCombat
+    StartCombat    <AiCombat>
+    StopCombat     <AiCombat>
+    GetTarget      <AiCombat>
 
-    Set,Mod,GetHello
+    SetHello       <AiHelloState>
+    ModHello       <AiHelloState>
+    GetHello       <AiHelloState>
 
-    Set,Mod,GetFight
+    SetFight       <AiFightstate>
+    ModFight       <AiFightstate>
+    GetFight       <AiFightstate>
 
-    Set,Mod,GetFlee
+    SetFlee        <AiFleestate>
+    ModFlee        <AiFleestate>
+    GetFlee        <AiFleestate>
 
-    Set,Mod,GetAlarm
+    SetAlarm       <AiAlarmstate>
+    ModAlarm       <AiAlarmstate>
+    GetAlarm       <AiAlarmstate>
