@@ -1,4 +1,4 @@
-AiFightstate
+;------------;
 =======================
 
 .. rubric:: SetFight

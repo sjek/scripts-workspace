@@ -31,6 +31,6 @@ Script-workspace
    Categorical Function List Openmw/AI/index
    Categorical Function List Openmw/Animation/index
    Categorical Function List Openmw/Dialogue/index
-
+   Categorical Function List Openmw/Cell/index
 
 Alphacedical Scripting functions/index
