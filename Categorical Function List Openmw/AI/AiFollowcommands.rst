@@ -1,14 +1,17 @@
 AiFollowcommands
 =========================
 
-AiFollow
----------------------------------
+.. rubric:: AiFollow
 
-AiFollowCell
----------------------------------
+.. rubric:: AiFollowCell
 
-AiEscort
----------------------------------
+These commands makes npc to follow
 
-AiEscortCell
----------------------------------
+---------------------------------------
+
+
+.. rubric:: AiEscort
+
+.. rubric:: AiEscortCell
+
+These commands makes npc to escort

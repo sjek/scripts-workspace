@@ -1,11 +1,8 @@
 AiCombat
 ===================
 
-StartCombat
--------------------
+.. rubric:: StartCombat
 
-StopCombat
--------------------
+.. rubric:: StopCombat
 
-GetTarget
--------------------
+.. rubric:: GetTarget

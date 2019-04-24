@@ -1,9 +1,6 @@
 AiDetection
 =====================
 
-GetDetected
----------------------------------
+.. rubric:: GetDetected
 
-
-GetLineOfSight, GetLos
----------------------------------
+.. rubric:: GetLineOfSight, GetLos

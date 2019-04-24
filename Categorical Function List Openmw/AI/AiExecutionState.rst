@@ -1,13 +1,10 @@
 AiExecutionState
 =========================
 
-GetAIPackageDone
----------------------------------
+.. rubric:: GetAIPackageDone
 
 
-GetCurrentAIPackage
----------------------------------
+.. rubric:: GetCurrentAIPackage
 
 
-ToggleAi, Tai
----------------------------------
+.. rubric:: ToggleAi, Tai
