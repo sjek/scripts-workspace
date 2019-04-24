@@ -16,6 +16,7 @@ AI
 
     GetDetected            <AiDetection>
     GetLineOfSight, GetLos <AiDetection>
+    Face                   <AiDetection>
 
     AIActivate     <AiCommands>
     AITravel       <AiCommands>
