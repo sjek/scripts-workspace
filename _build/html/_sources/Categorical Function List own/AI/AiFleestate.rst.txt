@@ -1,11 +1,8 @@
 AiFleestate
 ======================
 
-SetFlee
-----------------------
+.. rubric:: SetFlee
 
-ModHello
-----------------------
+.. rubric:: ModHello
 
-GetHello
-----------------------
+.. rubric:: GetHello

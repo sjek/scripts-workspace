@@ -1,13 +1,10 @@
 AiAlarmstate
 ==========================
 
-SetAlarm
---------------------------
+.. rubric:: SetAlarm
 
 
-ModAlarm
---------------------------
+.. rubric:: ModAlarm
 
 
-GetAlarm
---------------------------
+.. rubric:: GetAlarm

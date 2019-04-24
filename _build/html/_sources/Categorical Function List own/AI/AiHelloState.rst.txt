@@ -1,15 +1,6 @@
 AiHelloState
 ================================
 
-SetHello
----------------------------------
-
-
-
-ModHello
----------------------------------
-
-
-
-GetHello
----------------------------------
+.. rubric:: SetHello
+.. rubric:: ModHello
+.. rubric:: GetHello

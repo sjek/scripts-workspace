@@ -1,13 +1,10 @@
 AiCommands
 ===========================
 
-AIActivate
----------------------------------
+.. rubric:: AIActivate
 
 
-AITravel
----------------------------------
+.. rubric:: AITravel
 
 
-AIWander
----------------------------------
+.. rubric:: AIWander

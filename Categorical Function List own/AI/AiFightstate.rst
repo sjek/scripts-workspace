@@ -1,13 +1,10 @@
 AiFightstate
 =======================
 
-SetFight
------------------------
+.. rubric:: SetFight
 
 
-ModFight
------------------------
+.. rubric:: ModFight
 
 
-GetFight
------------------------
+.. rubric:: GetFight
