@@ -7,3 +7,4 @@ Categorical Function List Openmw
    AI/index
    Animation/index
    Dialogue/index
+   Cell/index
