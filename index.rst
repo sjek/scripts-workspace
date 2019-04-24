@@ -1,26 +1,32 @@
 Script-workspace
 ======================
 
-.. note:: This documentation is translated from the `original English one
-            <https://docs.godotengine.org/en/latest>`_ by community members
-            on `Weblate <https://hosted.weblate.org/projects/godot-engine/godot-docs>`_.
+.. note:: Placeholder
 
-.. tip:: This is the documentation for the stable 3.1 branch.
+.. tip:: This is the documentation for the openmw implementation of mwscript language
+
+.. toctree::
+   engine MCP features
+   vanilla script functions uesp wiki
+   readme
 
 
 .. toctree::
    :maxdepth: 2
+   :Caption: Categorical Function List own
 
-   Categorical Function List own/index
-   readme
-   engine MCP features
-   vanilla script functions uesp wiki
+   Categorical Function List own/AI/index
+   Categorical Function List own/Animation/index
+   Categorical Function List own/Dialogue/index
+   Categorical Function List own/Operators and conditions/index
+   Categorical Function List own/PlayerActions/index
+   Categorical Function List own/PlayerMovement/index
+   Categorical Function List own/PlayerMenus/index
 
 
 .. toctree::
    :maxdepth: 2
    :Caption: Categorical Function List Openmw
-   :name: Openmw
 
    Categorical Function List Openmw/AI/index
    Categorical Function List Openmw/Animation/index
