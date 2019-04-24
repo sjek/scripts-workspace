@@ -3,17 +3,13 @@ Animation
 
 Animation in general uses gamebryos .kf files.
 
-LoopGroup
--------------------------
+.. rubric:: LoopGroup
 
 
-PlayBink
--------------------------
+.. rubric:: PlayBink
 
 
-PlayGroup
--------------------------
+.. rubric:: PlayGroup
 
 
-SkipAnim
--------------------------
+.. rubric:: SkipAnim
