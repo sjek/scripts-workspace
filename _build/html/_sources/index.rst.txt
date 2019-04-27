@@ -15,7 +15,6 @@ Script-workspace
    :maxdepth: 2
    :Caption: Categorical Function List own
 
-   Categorical Function List own/AI/index
    Categorical Function List own/Animation/index
    Categorical Function List own/Dialogue/index
    Categorical Function List own/Operators and conditions/index
@@ -29,7 +28,8 @@ Script-workspace
    :Caption: Categorical Function List Openmw
 
    Categorical Function List Openmw/AI/index
-   Categorical Function List Openmw/Animation/index
+   Categorical Function List Openmw/Animation/Animation
+   Categorical Function List Openmw/Container/index
    Categorical Function List Openmw/Dialogue/index
    Categorical Function List Openmw/Cell/index
 

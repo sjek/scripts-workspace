@@ -1,4 +1,4 @@
-;------------;
+AICommands
 ===========================
 
 .. rubric:: AIActivate

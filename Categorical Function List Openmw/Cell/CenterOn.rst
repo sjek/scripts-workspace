@@ -1,7 +1,9 @@
-;------------;
+--------------------;
 ================================
 
-.. rubric:: CenterOnCell, coc
+.. _CenterOnCell / coc:
+.. rubric:: :ref:`CenterOnCell / coc`
 
 
-.. rubric:: CenterOnExterior, coe
+.. _CenterOnExterior / coe:
+.. rubric:: :ref:`CenterOnExterior / coe`

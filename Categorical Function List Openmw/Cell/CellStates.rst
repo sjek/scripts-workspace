@@ -1,11 +1,15 @@
-;------------;
+--------------------;
 ================================
 
 
-.. rubric:: CellChanged
+
+.. _CellChanged:
+.. rubric:: :ref:`CellChanged`
 
 
-.. rubric:: GetInterior
+.. _GetInterior:
+.. rubric:: :ref:`GetInterior`
 
 
-.. rubric:: GetPCCell
+.. _GetPCCell:
+.. rubric:: :ref:`GetPCCell`

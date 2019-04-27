@@ -1,4 +1,4 @@
-;------------;
+AICombat
 ===================
 
 .. rubric:: StartCombat
