@@ -1,11 +1,17 @@
-;------------;
+--------------------;
 ================================
 
 
-.. rubric:: SetWaterLevel
+
+.. _SetWaterLevel:
+.. rubric:: :ref:`SetWaterLevel`
 
 
-.. rubric:: ModWaterLevel
+
+.. _ModWaterLevel:
+.. rubric:: :ref:`ModWaterLevel`
 
 
-.. rubric:: GetWaterLevel
+
+.. _GetWaterLevel:
+.. rubric:: :ref:`GetWaterLevel`

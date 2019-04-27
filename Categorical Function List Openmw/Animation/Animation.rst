@@ -2,13 +2,17 @@ Animation
 =================================
 
 
-.. rubric:: LoopGroup
+LoopGroup
+-------------------------------------
 
 
-.. rubric:: PlayBink
+PlayBink
+-------------------------------------
 
 
-.. rubric:: PlayGroup
+PlayGroup
+-------------------------------------
 
 
-.. rubric:: SkipAnim
+SkipAnim
+-------------------------------------

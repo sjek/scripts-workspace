@@ -4,8 +4,8 @@ Cell
 .. toctree::
    :maxdepth: 2
 
-   CenterOnCell, coc      <CenterOn>
-   CenterOnExterior, coe  <CenterOn>
+   CenterOnCell / coc      <CenterOn>
+   CenterOnExterior / coe  <CenterOn>
 
    SetWaterLevel <Waterlevel>
    ModWaterLevel <Waterlevel>
