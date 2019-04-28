@@ -1,6 +1,7 @@
 Animation
 =================================
 
+Animation in gerenal is handled in the kf files.
 
 LoopGroup
 -------------------------------------

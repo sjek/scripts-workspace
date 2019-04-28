@@ -16,7 +16,7 @@ Dialogue
    ModFactionReaction <FactionReaction>
    GetFactionReaction <FactionReaction>
 
-   Addtopic
+   Addtopic           
    ClearInfoActor
    ForceGreeting
 

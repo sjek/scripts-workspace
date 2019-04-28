@@ -15,7 +15,7 @@ Script-workspace
    :maxdepth: 2
    :Caption: Categorical Function List own
 
-   Categorical Function List own/Animation/index
+.. Categorical Function List own/Animation/index
    Categorical Function List own/Dialogue/index
    Categorical Function List own/Operators and conditions/index
    Categorical Function List own/PlayerActions/index
@@ -33,5 +33,5 @@ Script-workspace
    Categorical Function List Openmw/Dialogue/index
    Categorical Function List Openmw/Cell/index
 
-Alphacedical Scripting functions/index
-Categorical Function List Openmw/index
+.. Alphacedical Scripting functions/index
+   Categorical Function List Openmw/index
