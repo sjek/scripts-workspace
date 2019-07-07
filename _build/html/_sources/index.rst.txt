@@ -29,8 +29,8 @@ Script-workspace
 
    Categorical Function List Openmw/AI/index
    Categorical Function List Openmw/Animation/Animation
-   Categorical Function List Openmw/Container/index
-   Categorical Function List Openmw/Dialogue/index
+   Categorical Function List Openmw/Container/Container
+   Categorical Function List Openmw/Dialogue/Dialogue
    Categorical Function List Openmw/Cell/index
    Categorical Function List Openmw/Control/Control
 

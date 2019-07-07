@@ -1,6 +1,12 @@
 Container
 ====================
 
+.. .. toctree::
+    :maxdepth: 2
+    <Holding>
+    <GetType>
+    <Equipped>
+
 AddItem
 --------------------------------
 
