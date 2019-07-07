@@ -11,7 +11,7 @@ Script-workspace
    readme
 
 
-.. toctree::
+..  toctree::
    :maxdepth: 2
    :Caption: Categorical Function List own
 
@@ -32,6 +32,7 @@ Script-workspace
    Categorical Function List Openmw/Container/index
    Categorical Function List Openmw/Dialogue/index
    Categorical Function List Openmw/Cell/index
+   Categorical Function List Openmw/Control/Control
 
 .. Alphacedical Scripting functions/index
    Categorical Function List Openmw/index
