@@ -1,9 +1,9 @@
 ################
-Dialogue
+Control
 ################
 
 
 .. toctree::
    :maxdepth: 4
 
-   Dialogue
+   Control

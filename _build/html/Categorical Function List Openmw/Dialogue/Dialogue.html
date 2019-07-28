@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Dialogue &mdash; openmw mwscript  documentation</title>
+  <title>—-Journal &mdash; openmw mwscript  documentation</title>
   
 
   
@@ -36,7 +36,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Cell" href="../Cell/index.html" />
-    <link rel="prev" title="Container" href="../Container/Container.html" /> 
+    <link rel="prev" title="Dialogue" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -88,28 +88,40 @@
 <p class="caption"><span class="caption-text">Categorical Function List Openmw</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../AI/index.html">AI</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Animation/Animation.html">Animation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Container/Container.html">Container</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Dialogue</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#journal">Journal</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#setjournalindex">SetJournalIndex</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#getjournalindex">GetJournalIndex</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#setreputation">SetReputation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#modreputation">ModReputation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#getreputation">GetReputation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#setfactionreaction">SetFactionReaction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#modfactionreaction">ModFactionReaction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#getfactionreaction">GetFactionReaction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#addtopic">Addtopic</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#clearinfoactor">ClearInfoActor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#forcegreeting">ForceGreeting</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#choise">Choise</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#goodbye">Goodbye</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#samefaction">SameFaction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Animation/index.html">Animation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Container/index.html">Container</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Dialogue</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">—-Journal</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Journal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setjournalindex">SetJournalIndex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getjournalindex">GetJournalIndex</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#reputation">—-Reputation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#setreputation">SetReputation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modreputation">ModReputation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getreputation">GetReputation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#faction">—-Faction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#setfactionreaction">SetFactionReaction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modfactionreaction">ModFactionReaction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getfactionreaction">GetFactionReaction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#samefaction">SameFaction</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#topics">—-Topics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#addtopic">Addtopic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#clearinfoactor">ClearInfoActor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#forcegreeting">ForceGreeting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#choise">Choise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#goodbye">Goodbye</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Cell/index.html">Cell</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Control/Control.html">Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Control/index.html">Control</a></li>
 </ul>
 
             
@@ -155,7 +167,9 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li>Dialogue</li>
+          <li><a href="index.html">Dialogue</a> &raquo;</li>
+        
+      <li>—-Journal</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -174,10 +188,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="dialogue">
-<h1>Dialogue<a class="headerlink" href="#dialogue" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="journal">
-<h2>Journal<a class="headerlink" href="#journal" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="journal">
+<h1>—-Journal<a class="headerlink" href="#journal" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>Journal<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="setjournalindex">
 <h2>SetJournalIndex<a class="headerlink" href="#setjournalindex" title="Permalink to this headline">¶</a></h2>
@@ -185,6 +199,9 @@
 <div class="section" id="getjournalindex">
 <h2>GetJournalIndex<a class="headerlink" href="#getjournalindex" title="Permalink to this headline">¶</a></h2>
 </div>
+</div>
+<div class="section" id="reputation">
+<h1>—-Reputation<a class="headerlink" href="#reputation" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="setreputation">
 <h2>SetReputation<a class="headerlink" href="#setreputation" title="Permalink to this headline">¶</a></h2>
 </div>
@@ -194,6 +211,9 @@
 <div class="section" id="getreputation">
 <h2>GetReputation<a class="headerlink" href="#getreputation" title="Permalink to this headline">¶</a></h2>
 </div>
+</div>
+<div class="section" id="faction">
+<h1>—-Faction<a class="headerlink" href="#faction" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="setfactionreaction">
 <h2>SetFactionReaction<a class="headerlink" href="#setfactionreaction" title="Permalink to this headline">¶</a></h2>
 </div>
@@ -203,6 +223,12 @@
 <div class="section" id="getfactionreaction">
 <h2>GetFactionReaction<a class="headerlink" href="#getfactionreaction" title="Permalink to this headline">¶</a></h2>
 </div>
+<div class="section" id="samefaction">
+<h2>SameFaction<a class="headerlink" href="#samefaction" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="topics">
+<h1>—-Topics<a class="headerlink" href="#topics" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="addtopic">
 <h2>Addtopic<a class="headerlink" href="#addtopic" title="Permalink to this headline">¶</a></h2>
 </div>
@@ -218,9 +244,6 @@
 <div class="section" id="goodbye">
 <h2>Goodbye<a class="headerlink" href="#goodbye" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="samefaction">
-<h2>SameFaction<a class="headerlink" href="#samefaction" title="Permalink to this headline">¶</a></h2>
-</div>
 </div>
 
 
@@ -234,7 +257,7 @@
         <a href="../Cell/index.html" class="btn btn-neutral float-right" title="Cell" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../Container/Container.html" class="btn btn-neutral float-left" title="Container" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Dialogue" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
