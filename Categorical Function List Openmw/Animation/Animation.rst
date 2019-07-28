@@ -1,21 +1,22 @@
-####################
-Animation
-####################
 
-Animation in gerenal is handled in the kf files.
+.. note:: Animation in gerenal is handled in the kf files.
+
 
 ***********************
-LoopGroup
+    LoopGroup
 ***********************
 
-***********************
-PlayBink
-***********************
 
 ***********************
-PlayGroup
+    PlayGroup
 ***********************
 
+
 ***********************
-SkipAnim
+    SkipAnim
+***********************
+
+
+***********************
+    PlayBink
 ***********************
