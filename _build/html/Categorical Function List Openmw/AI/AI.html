@@ -1,0 +1,380 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>AiFollowcommands &mdash; openmw mwscript  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Animation" href="../Animation/Animation.html" />
+    <link rel="prev" title="AI" href="Index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> openmw mwscript
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../engine MCP features.html">MCP features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../vanilla script functions uesp wiki.html">UESP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../readme.html">Readme</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Categorical Function List Openmw</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="Index.html">AI</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">AiFollowcommands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#aifollow">AiFollow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#aifollowcell">AiFollowCell</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#aiescort">AiEscort</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#aiescortcell">AiEscortCell</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#aiexecutionstate">AiExecutionState</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#getaipackagedone">GetAIPackageDone</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getcurrentaipackage">GetCurrentAIPackage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#toggleai-tai">ToggleAi, Tai</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#aidetection">AiDetection</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#getdetected">GetDetected</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getlineofsight-getlos">GetLineOfSight, GetLos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#face">Face</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#aicommands">AiCommands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#aiactivate">AIActivate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#aitravel">AITravel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#aiwander">AIWander</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#aicombat">AiCombat</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#startcombat">StartCombat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#stopcombat">StopCombat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gettarget">GetTarget</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#aihellostate">AiHelloState</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#sethello">SetHello</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modhello">ModHello</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gethello">GetHello</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#aifightstate">AiFightstate</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#setfight">SetFight</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modfight">ModFight</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getfight">GetFight</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#aifleestate">AiFleestate</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#setflee">SetFlee</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modflee">ModFlee</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getflee">GetFlee</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#aialarmstate">AiAlarmstate</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#setalarm">SetAlarm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modalarm">ModAlarm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getalarm">GetAlarm</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Animation/Animation.html">Animation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Container/Container.html">Container</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dialogue/Dialogue.html">Dialogue</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cell/index.html">Cell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Control/Control.html">Control</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">openmw mwscript</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="Index.html">AI</a> &raquo;</li>
+        
+      <li>AiFollowcommands</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/Categorical Function List Openmw/AI/AI.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="aifollowcommands">
+<h1>AiFollowcommands<a class="headerlink" href="#aifollowcommands" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="aifollow">
+<h2>AiFollow<a class="headerlink" href="#aifollow" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="aifollowcell">
+<h2>AiFollowCell<a class="headerlink" href="#aifollowcell" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="aiescort">
+<h2>AiEscort<a class="headerlink" href="#aiescort" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="aiescortcell">
+<h2>AiEscortCell<a class="headerlink" href="#aiescortcell" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="aiexecutionstate">
+<h1>AiExecutionState<a class="headerlink" href="#aiexecutionstate" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="getaipackagedone">
+<h2>GetAIPackageDone<a class="headerlink" href="#getaipackagedone" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="getcurrentaipackage">
+<h2>GetCurrentAIPackage<a class="headerlink" href="#getcurrentaipackage" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="toggleai-tai">
+<h2>ToggleAi, Tai<a class="headerlink" href="#toggleai-tai" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="aidetection">
+<h1>AiDetection<a class="headerlink" href="#aidetection" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="getdetected">
+<h2>GetDetected<a class="headerlink" href="#getdetected" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="getlineofsight-getlos">
+<h2>GetLineOfSight, GetLos<a class="headerlink" href="#getlineofsight-getlos" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="face">
+<h2>Face<a class="headerlink" href="#face" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="aicommands">
+<h1>AiCommands<a class="headerlink" href="#aicommands" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="aiactivate">
+<h2>AIActivate<a class="headerlink" href="#aiactivate" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="aitravel">
+<h2>AITravel<a class="headerlink" href="#aitravel" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="aiwander">
+<h2>AIWander<a class="headerlink" href="#aiwander" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="aicombat">
+<h1>AiCombat<a class="headerlink" href="#aicombat" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="startcombat">
+<h2>StartCombat<a class="headerlink" href="#startcombat" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="stopcombat">
+<h2>StopCombat<a class="headerlink" href="#stopcombat" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="gettarget">
+<h2>GetTarget<a class="headerlink" href="#gettarget" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="aihellostate">
+<h1>AiHelloState<a class="headerlink" href="#aihellostate" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="sethello">
+<h2>SetHello<a class="headerlink" href="#sethello" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="modhello">
+<h2>ModHello<a class="headerlink" href="#modhello" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="gethello">
+<h2>GetHello<a class="headerlink" href="#gethello" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="aifightstate">
+<h1>AiFightstate<a class="headerlink" href="#aifightstate" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="setfight">
+<h2>SetFight<a class="headerlink" href="#setfight" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="modfight">
+<h2>ModFight<a class="headerlink" href="#modfight" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="getfight">
+<h2>GetFight<a class="headerlink" href="#getfight" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="aifleestate">
+<h1>AiFleestate<a class="headerlink" href="#aifleestate" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="setflee">
+<h2>SetFlee<a class="headerlink" href="#setflee" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="modflee">
+<h2>ModFlee<a class="headerlink" href="#modflee" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="getflee">
+<h2>GetFlee<a class="headerlink" href="#getflee" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="aialarmstate">
+<h1>AiAlarmstate<a class="headerlink" href="#aialarmstate" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="setalarm">
+<h2>SetAlarm<a class="headerlink" href="#setalarm" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="modalarm">
+<h2>ModAlarm<a class="headerlink" href="#modalarm" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="getalarm">
+<h2>GetAlarm<a class="headerlink" href="#getalarm" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Animation/Animation.html" class="btn btn-neutral float-right" title="Animation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Index.html" class="btn btn-neutral float-left" title="AI" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright CC0
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,5 +1,6 @@
+#######################
 Script-workspace
-======================
+#######################
 
 .. note:: Placeholder
 
@@ -11,23 +12,11 @@ Script-workspace
    readme
 
 
-..  toctree::
-   :maxdepth: 2
-   :Caption: Categorical Function List own
-
-.. Categorical Function List own/Animation/index
-   Categorical Function List own/Dialogue/index
-   Categorical Function List own/Operators and conditions/index
-   Categorical Function List own/PlayerActions/index
-   Categorical Function List own/PlayerMovement/index
-   Categorical Function List own/PlayerMenus/index
-
-
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
    :Caption: Categorical Function List Openmw
 
-   Categorical Function List Openmw/AI/index
+   Categorical Function List Openmw/AI/Index
    Categorical Function List Openmw/Animation/Animation
    Categorical Function List Openmw/Container/Container
    Categorical Function List Openmw/Dialogue/Dialogue
