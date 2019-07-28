@@ -16,7 +16,7 @@ Script-workspace
    :maxdepth: 4
    :Caption: Categorical Function List Openmw
 
-   Categorical Function List Openmw/AI/Index
+   Categorical Function List Openmw/AI/index
    Categorical Function List Openmw/Animation/Animation
    Categorical Function List Openmw/Container/Container
    Categorical Function List Openmw/Dialogue/Dialogue
