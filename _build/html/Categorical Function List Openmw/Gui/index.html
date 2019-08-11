@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Control &mdash; openmw mwscript  documentation</title>
+  <title>Gui &mdash; openmw mwscript  documentation</title>
   
 
   
@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Enable" href="Control.html" />
-    <link rel="prev" title="—-CenterOn" href="../Cell/Cell.html" /> 
+    <link rel="next" title="—-Menus" href="Gui.html" />
+    <link rel="prev" title="Enable" href="../Control/Control.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -92,13 +92,15 @@
 <li class="toctree-l1"><a class="reference internal" href="../Container/index.html">Container</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Dialogue/index.html">Dialogue</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Cell/index.html">Cell</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Control</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Control.html">Enable</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Control.html#disable">Disable</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Control.html#getdisabled">GetDisabled</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Control/index.html">Control</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Gui</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Gui.html">—-Menus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Gui.html#chargen">—-Chargen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Gui.html#resting">—-Resting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Gui.html#map">—-Map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Gui.html#various">—-Various</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../Gui/index.html">Gui</a></li>
 </ul>
 
             
@@ -144,13 +146,13 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li>Control</li>
+      <li>Gui</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/Categorical Function List Openmw/Control/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/Categorical Function List Openmw/Gui/index.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -163,13 +165,44 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="control">
-<h1>Control<a class="headerlink" href="#control" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="gui">
+<h1>Gui<a class="headerlink" href="#gui" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="Control.html">Enable</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Control.html#disable">Disable</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Control.html#getdisabled">GetDisabled</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Gui.html">—-Menus</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Gui.html#enableinventorymenu">enableinventorymenu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Gui.html#enablemagicmenu">enablemagicmenu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Gui.html#enablemapmenu">enablemapmenu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Gui.html#enablestatsmenu">enablestatsmenu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Gui.html#togglemenus-tm">togglemenus, tm</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Gui.html#chargen">—-Chargen</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Gui.html#enablebirthmenu">enablebirthmenu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Gui.html#enableclassmenu">enableclassmenu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Gui.html#enablenamemenu">enablenamemenu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Gui.html#enableracemenu">enableracemenu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Gui.html#enablestatreviewmenu">enablestatreviewmenu</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Gui.html#resting">—-Resting</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Gui.html#enablerest">enablerest</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Gui.html#enablelevelupmenu">enablelevelupmenu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Gui.html#showrestmenu">showrestmenu</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Gui.html#map">—-Map</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Gui.html#togglefogofwar-tfow">togglefogofwar, tfow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Gui.html#showmap">showmap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Gui.html#fillmap">fillmap</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Gui.html#various">—-Various</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Gui.html#getbuttonpressed">getbuttonpressed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Gui.html#togglefullhelp-tfh">togglefullhelp, tfh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Gui.html#menutest">menutest</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -182,10 +215,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="Control.html" class="btn btn-neutral float-right" title="Enable" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="Gui.html" class="btn btn-neutral float-right" title="—-Menus" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../Cell/Cell.html" class="btn btn-neutral float-left" title="—-CenterOn" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../Control/Control.html" class="btn btn-neutral float-left" title="Enable" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

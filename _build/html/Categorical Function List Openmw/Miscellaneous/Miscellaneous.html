@@ -1,0 +1,459 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Activating &mdash; openmw mwscript  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="Miscellaneous" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> openmw mwscript
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../engine MCP features.html">MCP features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../vanilla script functions uesp wiki.html">UESP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../readme.html">Readme</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Categorical Function List Openmw</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../AI/index.html">AI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Animation/index.html">Animation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Container/index.html">Container</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dialogue/index.html">Dialogue</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cell/index.html">Cell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Control/index.html">Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gui/index.html">Gui</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Miscellaneous</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Activating</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#onactivate">onactivate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#activate">activate</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#locking">Locking</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#lock">lock</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#unlock">unlock</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getlocked">getlocked</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#magic-effects">Magic effects</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#geteffect">geteffect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getspelleffects">getspelleffects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cast">cast</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#explodespell">explodespell</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#drop-functions">drop functions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#drop">drop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dropsoulgem">dropsoulgem</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#console-toggles">console toggles</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#togglecollisionboxes-tcb">togglecollisionboxes, tcb</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#togglecollisiongrid-tcg">togglecollisiongrid, tcg</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#togglewireframe-twf">togglewireframe, twf</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#togglewater-twa">togglewater, twa</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#toggleworld-tw">toggleworld, tw</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#togglepathgrid-tpg">togglepathgrid, tpg</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#togglevanitymode-tvm">togglevanitymode, tvm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#togglegodmode-tgm">togglegodmode, tgm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#togglescripts">togglescripts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#toggleborders-tb">toggleborders, tb</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#togglenavmesh">togglenavmesh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setnavmeshnumber">setnavmeshnumber</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#toggleactorspaths-tap">toggleactorspaths, tap</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#fading">Fading</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#fadein">fadein</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fadeout">fadeout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fadeto">fadeto</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#a">—-a</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">—-a</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">—-a</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">—-a</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">—-a</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">—-a</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">—-a</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">—-a</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#xbox">xbox</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">—-a</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#teleporting">Teleporting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">—-a</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#levitation">Levitation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#leveled-lists">Leveled lists</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">openmw mwscript</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Miscellaneous</a> &raquo;</li>
+        
+      <li>Activating</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/Categorical Function List Openmw/Miscellaneous/Miscellaneous.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="activating">
+<h1>Activating<a class="headerlink" href="#activating" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="onactivate">
+<h2>onactivate<a class="headerlink" href="#onactivate" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="activate">
+<h2>activate<a class="headerlink" href="#activate" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="locking">
+<h1>Locking<a class="headerlink" href="#locking" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="lock">
+<h2>lock<a class="headerlink" href="#lock" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="unlock">
+<h2>unlock<a class="headerlink" href="#unlock" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="getlocked">
+<h2>getlocked<a class="headerlink" href="#getlocked" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="magic-effects">
+<h1>Magic effects<a class="headerlink" href="#magic-effects" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="geteffect">
+<h2>geteffect<a class="headerlink" href="#geteffect" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="getspelleffects">
+<h2>getspelleffects<a class="headerlink" href="#getspelleffects" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="cast">
+<h2>cast<a class="headerlink" href="#cast" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="explodespell">
+<h2>explodespell<a class="headerlink" href="#explodespell" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="drop-functions">
+<h1>drop functions<a class="headerlink" href="#drop-functions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="drop">
+<h2>drop<a class="headerlink" href="#drop" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="dropsoulgem">
+<h2>dropsoulgem<a class="headerlink" href="#dropsoulgem" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="console-toggles">
+<h1>console toggles<a class="headerlink" href="#console-toggles" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="togglecollisionboxes-tcb">
+<h2>togglecollisionboxes, tcb<a class="headerlink" href="#togglecollisionboxes-tcb" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="togglecollisiongrid-tcg">
+<h2>togglecollisiongrid, tcg<a class="headerlink" href="#togglecollisiongrid-tcg" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="togglewireframe-twf">
+<h2>togglewireframe, twf<a class="headerlink" href="#togglewireframe-twf" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="togglewater-twa">
+<h2>togglewater, twa<a class="headerlink" href="#togglewater-twa" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="toggleworld-tw">
+<h2>toggleworld, tw<a class="headerlink" href="#toggleworld-tw" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="togglepathgrid-tpg">
+<h2>togglepathgrid, tpg<a class="headerlink" href="#togglepathgrid-tpg" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="togglevanitymode-tvm">
+<h2>togglevanitymode, tvm<a class="headerlink" href="#togglevanitymode-tvm" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="togglegodmode-tgm">
+<h2>togglegodmode, tgm<a class="headerlink" href="#togglegodmode-tgm" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="togglescripts">
+<h2>togglescripts<a class="headerlink" href="#togglescripts" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="toggleborders-tb">
+<h2>toggleborders, tb<a class="headerlink" href="#toggleborders-tb" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="togglenavmesh">
+<h2>togglenavmesh<a class="headerlink" href="#togglenavmesh" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="setnavmeshnumber">
+<h2>setnavmeshnumber<a class="headerlink" href="#setnavmeshnumber" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="toggleactorspaths-tap">
+<h2>toggleactorspaths, tap<a class="headerlink" href="#toggleactorspaths-tap" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="fading">
+<h1>Fading<a class="headerlink" href="#fading" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="fadein">
+<h2>fadein<a class="headerlink" href="#fadein" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="fadeout">
+<h2>fadeout<a class="headerlink" href="#fadeout" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="fadeto">
+<h2>fadeto<a class="headerlink" href="#fadeto" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="a">
+<h1>—-a<a class="headerlink" href="#a" title="Permalink to this headline">¶</a></h1>
+<p>dontsaveobject
+pcforce1stperson
+pcforce3rdperson
+pcget3rdperson</p>
+</div>
+<div class="section" id="id1">
+<h1>—-a<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>getpcsleep
+getpcjumping
+wakeuppc</p>
+</div>
+<div class="section" id="id2">
+<h1>—-a<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h1>
+<p>playbink</p>
+</div>
+<div class="section" id="id3">
+<h1>—-a<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h1>
+<p>payfine
+payfinethief
+gotojail
+getpcinjail
+getpctraveling</p>
+</div>
+<div class="section" id="id4">
+<h1>—-a<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h1>
+<p>addsoulgem
+removesoulgem</p>
+</div>
+<div class="section" id="id5">
+<h1>—-a<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h1>
+<p>getattacked
+getweapondrawn
+getspellreadied
+repairedonme</p>
+</div>
+<div class="section" id="id6">
+<h1>—-a<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h1>
+<p>getstandingpc
+getstandingactor
+hurtstandingactor
+getcollidingpc
+getcollidingactor
+hurtcollidingactor</p>
+</div>
+<div class="section" id="id7">
+<h1>—-a<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="xbox">
+<h2>xbox<a class="headerlink" href="#xbox" title="Permalink to this headline">¶</a></h2>
+<p>getsquareroot
+getwindspeed
+getcurrenttime
+fall</p>
+</div>
+</div>
+<div class="section" id="id8">
+<h1>—-a<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h1>
+<p>hitonme
+hitattemptonme</p>
+</div>
+<div class="section" id="teleporting">
+<h1>Teleporting<a class="headerlink" href="#teleporting" title="Permalink to this headline">¶</a></h1>
+<p>enableteleporting
+disableteleporting</p>
+</div>
+<div class="section" id="id9">
+<h1>—-a<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h1>
+<p>showvars, sv
+show
+betacomment, bc
+ori
+showscenegraph, ssg</p>
+</div>
+<div class="section" id="levitation">
+<h1>Levitation<a class="headerlink" href="#levitation" title="Permalink to this headline">¶</a></h1>
+<p>enablelevitation
+disablelevitation</p>
+</div>
+<div class="section" id="leveled-lists">
+<h1>Leveled lists<a class="headerlink" href="#leveled-lists" title="Permalink to this headline">¶</a></h1>
+<p>addtolevcreature
+removefromlevcreature
+addtolevitem
+removefromlevitem</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Miscellaneous" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright CC0
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
