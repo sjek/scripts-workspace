@@ -9,3 +9,5 @@ Disable
 ***********************
 GetDisabled
 ***********************
+
+setdelete
