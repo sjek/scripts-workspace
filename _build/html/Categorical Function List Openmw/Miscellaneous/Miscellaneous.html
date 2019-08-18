@@ -35,6 +35,7 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Sky" href="../Sky/index.html" />
     <link rel="prev" title="Miscellaneous" href="index.html" /> 
 </head>
 
@@ -110,6 +111,11 @@
 <li class="toctree-l3"><a class="reference internal" href="#getspelleffects">getspelleffects</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#cast">cast</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#explodespell">explodespell</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#addspell">addspell</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#removespell">removespell</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#removespelleffects">removespelleffects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#removeeffects">removeeffects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getspell">getspell</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#drop-functions">—-Drop functions</a><ul>
@@ -157,6 +163,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#criminality">—-Criminality</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#get-set-modpccrimelevel">get-, set-, modpccrimelevel</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#payfine">payfine</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#payfinethief">payfinethief</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#gotojail">gotojail</a></li>
@@ -184,11 +191,6 @@
 <li class="toctree-l3"><a class="reference internal" href="#hurtcollidingactor">hurtcollidingactor</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#teleporting">—-Teleporting</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#enableteleporting">enableteleporting</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#disableteleporting">disableteleporting</a></li>
-</ul>
-</li>
 <li class="toctree-l2"><a class="reference internal" href="#show-game-infos">—-Show game infos</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#showvars-sv">showvars, sv</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#show">show</a></li>
@@ -197,9 +199,14 @@
 <li class="toctree-l3"><a class="reference internal" href="#showscenegraph-ssg">showscenegraph, ssg</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#teleporting">—-Teleporting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#enableteleporting">enableteleporting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#disableteleporting">disableteleporting</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#levitation">—-Levitation</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#disablelevitation">disablelevitation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#enablelevitation">enablelevitation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#disablelevitation">disablelevitation</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#leveled-lists">—-Leveled lists</a><ul>
@@ -222,6 +229,10 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../Sky/index.html">Sky</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Sound/index.html">Sound</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Transformation/index.html">Transformation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Stats/index.html">Stats</a></li>
 </ul>
 
             
@@ -311,6 +322,10 @@
 </div>
 <div class="section" id="magic-effects">
 <h1>—-Magic effects<a class="headerlink" href="#magic-effects" title="Permalink to this headline">¶</a></h1>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>magic efffects in stats</p>
+</div>
 <div class="section" id="geteffect">
 <h2>geteffect<a class="headerlink" href="#geteffect" title="Permalink to this headline">¶</a></h2>
 </div>
@@ -322,6 +337,21 @@
 </div>
 <div class="section" id="explodespell">
 <h2>explodespell<a class="headerlink" href="#explodespell" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="addspell">
+<h2>addspell<a class="headerlink" href="#addspell" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="removespell">
+<h2>removespell<a class="headerlink" href="#removespell" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="removespelleffects">
+<h2>removespelleffects<a class="headerlink" href="#removespelleffects" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="removeeffects">
+<h2>removeeffects<a class="headerlink" href="#removeeffects" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="getspell">
+<h2>getspell<a class="headerlink" href="#getspell" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 <div class="section" id="drop-functions">
@@ -422,6 +452,9 @@
 </div>
 <div class="section" id="criminality">
 <h1>—-Criminality<a class="headerlink" href="#criminality" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="get-set-modpccrimelevel">
+<h2>get-, set-, modpccrimelevel<a class="headerlink" href="#get-set-modpccrimelevel" title="Permalink to this headline">¶</a></h2>
+</div>
 <div class="section" id="payfine">
 <h2>payfine<a class="headerlink" href="#payfine" title="Permalink to this headline">¶</a></h2>
 </div>
@@ -480,15 +513,6 @@
 <h2>hurtcollidingactor<a class="headerlink" href="#hurtcollidingactor" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
-<div class="section" id="teleporting">
-<h1>—-Teleporting<a class="headerlink" href="#teleporting" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="enableteleporting">
-<h2>enableteleporting<a class="headerlink" href="#enableteleporting" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="disableteleporting">
-<h2>disableteleporting<a class="headerlink" href="#disableteleporting" title="Permalink to this headline">¶</a></h2>
-</div>
-</div>
 <div class="section" id="show-game-infos">
 <h1>—-Show game infos<a class="headerlink" href="#show-game-infos" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="showvars-sv">
@@ -507,13 +531,22 @@
 <h2>showscenegraph, ssg<a class="headerlink" href="#showscenegraph-ssg" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
+<div class="section" id="teleporting">
+<h1>—-Teleporting<a class="headerlink" href="#teleporting" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="enableteleporting">
+<h2>enableteleporting<a class="headerlink" href="#enableteleporting" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="disableteleporting">
+<h2>disableteleporting<a class="headerlink" href="#disableteleporting" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
 <div class="section" id="levitation">
 <h1>—-Levitation<a class="headerlink" href="#levitation" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="disablelevitation">
-<h2>disablelevitation<a class="headerlink" href="#disablelevitation" title="Permalink to this headline">¶</a></h2>
-</div>
 <div class="section" id="enablelevitation">
 <h2>enablelevitation<a class="headerlink" href="#enablelevitation" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="disablelevitation">
+<h2>disablelevitation<a class="headerlink" href="#disablelevitation" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 <div class="section" id="leveled-lists">
@@ -566,6 +599,8 @@
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Sky/index.html" class="btn btn-neutral float-right" title="Sky" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="index.html" class="btn btn-neutral float-left" title="Miscellaneous" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>—-Activating &mdash; openmw mwscript  documentation</title>
+  <title>—-Scale &mdash; openmw mwscript  documentation</title>
   
 
   
@@ -97,7 +97,46 @@
 <li class="toctree-l1"><a class="reference internal" href="../Sky/index.html">Sky</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Sound/index.html">Sound</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Transformation</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">—-Activating</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">—-Scale</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#setscale">setscale</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getscale">getscale</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modscale">modscale</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#angle">—-Angle</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#setangle">setangle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getangle">getangle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getstartingangle">getstartingangle</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#rotation">—-Rotation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#rotate">rotate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rotateworld">rotateworld</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#position">—-Position</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#setpos">setpos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getpos">getpos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getstartingpos">getstartingpos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">position</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#positioncell">positioncell</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#move">move</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#moveworld">moveworld</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#placing">—-Placing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#placeitem">placeitem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#placeitemcell">placeitemcell</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#placeatpc">placeatpc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#placeatme">placeatme</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#resetting">—-Resetting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#setatstart">setatstart</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#resetactors-ra">resetactors, ra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fixme">fixme</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -147,7 +186,7 @@
         
           <li><a href="index.html">Transformation</a> &raquo;</li>
         
-      <li>—-Activating</li>
+      <li>—-Scale</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -166,8 +205,89 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="activating">
-<h1>—-Activating<a class="headerlink" href="#activating" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="scale">
+<h1>—-Scale<a class="headerlink" href="#scale" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="setscale">
+<h2>setscale<a class="headerlink" href="#setscale" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="getscale">
+<h2>getscale<a class="headerlink" href="#getscale" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="modscale">
+<h2>modscale<a class="headerlink" href="#modscale" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="angle">
+<h1>—-Angle<a class="headerlink" href="#angle" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="setangle">
+<h2>setangle<a class="headerlink" href="#setangle" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="getangle">
+<h2>getangle<a class="headerlink" href="#getangle" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="getstartingangle">
+<h2>getstartingangle<a class="headerlink" href="#getstartingangle" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="rotation">
+<h1>—-Rotation<a class="headerlink" href="#rotation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="rotate">
+<h2>rotate<a class="headerlink" href="#rotate" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="rotateworld">
+<h2>rotateworld<a class="headerlink" href="#rotateworld" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="position">
+<h1>—-Position<a class="headerlink" href="#position" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="setpos">
+<h2>setpos<a class="headerlink" href="#setpos" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="getpos">
+<h2>getpos<a class="headerlink" href="#getpos" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="getstartingpos">
+<h2>getstartingpos<a class="headerlink" href="#getstartingpos" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id1">
+<h2>position<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="positioncell">
+<h2>positioncell<a class="headerlink" href="#positioncell" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="move">
+<h2>move<a class="headerlink" href="#move" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="moveworld">
+<h2>moveworld<a class="headerlink" href="#moveworld" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="placing">
+<h1>—-Placing<a class="headerlink" href="#placing" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="placeitem">
+<h2>placeitem<a class="headerlink" href="#placeitem" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="placeitemcell">
+<h2>placeitemcell<a class="headerlink" href="#placeitemcell" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="placeatpc">
+<h2>placeatpc<a class="headerlink" href="#placeatpc" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="placeatme">
+<h2>placeatme<a class="headerlink" href="#placeatme" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="resetting">
+<h1>—-Resetting<a class="headerlink" href="#resetting" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="setatstart">
+<h2>setatstart<a class="headerlink" href="#setatstart" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="resetactors-ra">
+<h2>resetactors, ra<a class="headerlink" href="#resetactors-ra" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="fixme">
+<h2>fixme<a class="headerlink" href="#fixme" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 
 
