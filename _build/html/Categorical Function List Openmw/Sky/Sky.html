@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Control &mdash; openmw mwscript  documentation</title>
+  <title>—-Moons &mdash; openmw mwscript  documentation</title>
   
 
   
@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Enable" href="Control.html" />
-    <link rel="prev" title="—-CenterOn" href="../Cell/Cell.html" /> 
+    <link rel="next" title="Sound" href="../Sound/index.html" />
+    <link rel="prev" title="Sky" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -81,7 +81,7 @@
             
             
               <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../TES3MP scripting.html">TES3MP Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../TES3MP scripting overview.html">TES3MP Scripting overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../engine MCP features.html">MCP features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../readme.html">Readme</a></li>
 </ul>
@@ -92,15 +92,28 @@
 <li class="toctree-l1"><a class="reference internal" href="../Container/index.html">Container</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Dialogue/index.html">Dialogue</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Cell/index.html">Cell</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Control</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Control.html">Enable</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Control.html#disable">Disable</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Control.html#getdisabled">GetDisabled</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Control.html#setdelete">SetDelete</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../Control/index.html">Control</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Gui/index.html">Gui</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Miscellaneous/index.html">Miscellaneous</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Sky</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">—-Moons</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#turnmoonwhite">turnmoonwhite</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#turnmoonred">turnmoonred</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getmasserphase">getmasserphase</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getsecundaphase">getsecundaphase</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#weather">—-Weather</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#changeweather">changeweather</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getcurrentweather">getcurrentweather</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modregion">modregion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#togglesky-ts">togglesky, ts</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Sound/index.html">Sound</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Transformation/index.html">Transformation</a></li>
 </ul>
 
             
@@ -146,13 +159,15 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li>Control</li>
+          <li><a href="index.html">Sky</a> &raquo;</li>
+        
+      <li>—-Moons</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/Categorical Function List Openmw/Control/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/Categorical Function List Openmw/Sky/Sky.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -165,15 +180,34 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="control">
-<h1>Control<a class="headerlink" href="#control" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Control.html">Enable</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Control.html#disable">Disable</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Control.html#getdisabled">GetDisabled</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Control.html#setdelete">SetDelete</a></li>
-</ul>
+  <div class="section" id="moons">
+<h1>—-Moons<a class="headerlink" href="#moons" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="turnmoonwhite">
+<h2>turnmoonwhite<a class="headerlink" href="#turnmoonwhite" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="turnmoonred">
+<h2>turnmoonred<a class="headerlink" href="#turnmoonred" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="getmasserphase">
+<h2>getmasserphase<a class="headerlink" href="#getmasserphase" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="getsecundaphase">
+<h2>getsecundaphase<a class="headerlink" href="#getsecundaphase" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="weather">
+<h1>—-Weather<a class="headerlink" href="#weather" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="changeweather">
+<h2>changeweather<a class="headerlink" href="#changeweather" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="getcurrentweather">
+<h2>getcurrentweather<a class="headerlink" href="#getcurrentweather" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="modregion">
+<h2>modregion<a class="headerlink" href="#modregion" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="togglesky-ts">
+<h2>togglesky, ts<a class="headerlink" href="#togglesky-ts" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
@@ -185,10 +219,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="Control.html" class="btn btn-neutral float-right" title="Enable" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../Sound/index.html" class="btn btn-neutral float-right" title="Sound" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../Cell/Cell.html" class="btn btn-neutral float-left" title="—-CenterOn" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Sky" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

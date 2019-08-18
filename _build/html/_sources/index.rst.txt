@@ -11,9 +11,10 @@ Script-workspace
               Discord server is listed inside.
 
 * For TES3MP see   http://docs.tes3mp.com/en/latest/index.html for API
-              and examples in  https://modding-openmw.com/mods/tag/tes3mp-lua/
+              and examples in  https://modding-openmw.com/mods/tag/tes3mp-lua/ ,
 
 .. toctree::
+   TES3MP scripting overview
    engine MCP features
    readme
 
@@ -30,6 +31,9 @@ Script-workspace
    Categorical Function List Openmw/Control/index
    Categorical Function List Openmw/Gui/index
    Categorical Function List Openmw/Miscellaneous/index
+   Categorical Function List Openmw/Sky/index
+   Categorical Function List Openmw/Sound/index
+   Categorical Function List Openmw/Transformation/index
 
 
 .. Alphacedical Scripting functions/index
