@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Control &mdash; openmw mwscript  documentation</title>
+  <title>Sound &mdash; openmw mwscript  documentation</title>
   
 
   
@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Enable" href="Control.html" />
-    <link rel="prev" title="—-CenterOn" href="../Cell/Cell.html" /> 
+    <link rel="next" title="—-Music" href="Sound.html" />
+    <link rel="prev" title="togglesky, ts" href="../Sky/Sky.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -81,7 +81,7 @@
             
             
               <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../TES3MP scripting.html">TES3MP Scripting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../TES3MP scripting overview.html">TES3MP Scripting overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../engine MCP features.html">MCP features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../readme.html">Readme</a></li>
 </ul>
@@ -92,15 +92,17 @@
 <li class="toctree-l1"><a class="reference internal" href="../Container/index.html">Container</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Dialogue/index.html">Dialogue</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Cell/index.html">Cell</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Control</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Control.html">Enable</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Control.html#disable">Disable</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Control.html#getdisabled">GetDisabled</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Control.html#setdelete">SetDelete</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../Control/index.html">Control</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Gui/index.html">Gui</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Miscellaneous/index.html">Miscellaneous</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Sky/index.html">Sky</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Sound</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Sound.html">—-Music</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sound.html#sounds">—-Sounds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sound.html#talkings">—-Talkings</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Transformation/index.html">Transformation</a></li>
 </ul>
 
             
@@ -146,13 +148,13 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li>Control</li>
+      <li>Sound</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/Categorical Function List Openmw/Control/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/Categorical Function List Openmw/Sound/index.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -165,14 +167,30 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="control">
-<h1>Control<a class="headerlink" href="#control" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="sound">
+<h1>Sound<a class="headerlink" href="#sound" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="Control.html">Enable</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Control.html#disable">Disable</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Control.html#getdisabled">GetDisabled</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Control.html#setdelete">SetDelete</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sound.html">—-Music</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Sound.html#streammusic">streammusic</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Sound.html#sounds">—-Sounds</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Sound.html#stopsound">stopsound</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sound.html#getsoundplaying">getsoundplaying</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sound.html#playsound">playsound</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sound.html#playsoundvp">playsoundvp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sound.html#playsound3d">playsound3d</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sound.html#playsound3dvp">playsound3dvp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sound.html#playloopsound3d">playloopsound3d</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sound.html#playloopsound3dvp">playloopsound3dvp</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Sound.html#talkings">—-Talkings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Sound.html#say">say</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sound.html#saydone">saydone</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -185,10 +203,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="Control.html" class="btn btn-neutral float-right" title="Enable" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="Sound.html" class="btn btn-neutral float-right" title="—-Music" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../Cell/Cell.html" class="btn btn-neutral float-left" title="—-CenterOn" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../Sky/Sky.html" class="btn btn-neutral float-left" title="togglesky, ts" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

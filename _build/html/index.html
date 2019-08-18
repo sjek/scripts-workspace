@@ -35,7 +35,7 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="MCP features" href="engine MCP features.html" /> 
+    <link rel="next" title="TES3MP Scripting overview" href="TES3MP scripting overview.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -80,6 +80,7 @@
             
             
               <ul>
+<li class="toctree-l1"><a class="reference internal" href="TES3MP scripting overview.html">TES3MP Scripting overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="engine MCP features.html">MCP features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="readme.html">Readme</a></li>
 </ul>
@@ -93,6 +94,9 @@
 <li class="toctree-l1"><a class="reference internal" href="Categorical Function List Openmw/Control/index.html">Control</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Categorical Function List Openmw/Gui/index.html">Gui</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/index.html">Miscellaneous</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Categorical Function List Openmw/Sky/index.html">Sky</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Categorical Function List Openmw/Sound/index.html">Sound</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Categorical Function List Openmw/Transformation/index.html">Transformation</a></li>
 </ul>
 
             
@@ -175,13 +179,14 @@ and quite naturally it’s implications on gameplay mechanics.</p>
 </dl>
 </li>
 <li><dl class="simple">
-<dt>For TES3MP see   <a class="reference external" href="http://docs.tes3mp.com/en/latest/index.html">http://docs.tes3mp.com/en/latest/index.html</a> for API</dt><dd><p>and examples in  <a class="reference external" href="https://modding-openmw.com/mods/tag/tes3mp-lua/">https://modding-openmw.com/mods/tag/tes3mp-lua/</a></p>
+<dt>For TES3MP see   <a class="reference external" href="http://docs.tes3mp.com/en/latest/index.html">http://docs.tes3mp.com/en/latest/index.html</a> for API</dt><dd><p>and examples in  <a class="reference external" href="https://modding-openmw.com/mods/tag/tes3mp-lua/">https://modding-openmw.com/mods/tag/tes3mp-lua/</a> ,</p>
 </dd>
 </dl>
 </li>
 </ul>
 <div class="toctree-wrapper compound">
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="TES3MP scripting overview.html">TES3MP Scripting overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="engine MCP features.html">MCP features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="readme.html">Readme</a></li>
 </ul>
@@ -325,6 +330,7 @@ and quite naturally it’s implications on gameplay mechanics.</p>
 <li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Control/Control.html">Enable</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Control/Control.html#disable">Disable</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Control/Control.html#getdisabled">GetDisabled</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Control/Control.html#setdelete">SetDelete</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Categorical Function List Openmw/Gui/index.html">Gui</a><ul>
@@ -365,30 +371,30 @@ and quite naturally it’s implications on gameplay mechanics.</p>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/index.html">Miscellaneous</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html">Activating</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html">—-Activating</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#onactivate">onactivate</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#activate">activate</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#locking">Locking</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#locking">—-Locking</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#lock">lock</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#unlock">unlock</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#getlocked">getlocked</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#magic-effects">Magic effects</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#magic-effects">—-Magic effects</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#geteffect">geteffect</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#getspelleffects">getspelleffects</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#cast">cast</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#explodespell">explodespell</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#drop-functions">drop functions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#drop-functions">—-Drop functions</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#drop">drop</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#dropsoulgem">dropsoulgem</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#console-toggles">console toggles</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#console-toggles">—-Console toggles</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#togglecollisionboxes-tcb">togglecollisionboxes, tcb</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#togglecollisiongrid-tcg">togglecollisiongrid, tcg</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#togglewireframe-twf">togglewireframe, twf</a></li>
@@ -404,28 +410,137 @@ and quite naturally it’s implications on gameplay mechanics.</p>
 <li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#toggleactorspaths-tap">toggleactorspaths, tap</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#fading">Fading</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#fading">—-Fading</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#fadein">fadein</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#fadeout">fadeout</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#fadeto">fadeto</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#a">—-a</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#id1">—-a</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#id2">—-a</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#id3">—-a</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#id4">—-a</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#id5">—-a</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#id6">—-a</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#id7">—-a</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#xbox">xbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#view-mode">—-View mode</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#pcforce1stperson">pcforce1stperson</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#pcforce3rdperson">pcforce3rdperson</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#pcget3rdperson">pcget3rdperson</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#id8">—-a</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#teleporting">Teleporting</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#id9">—-a</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#levitation">Levitation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#leveled-lists">Leveled lists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#player-state">—-Player state</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#getpcsleep">getpcsleep</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#getpcjumping">getpcjumping</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#getpctraveling">getpctraveling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#getpcinjail">getpcinjail</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#movies">—-Movies</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#playbink">playbink</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#criminality">—-Criminality</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#payfine">payfine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#payfinethief">payfinethief</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#gotojail">gotojail</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#soulgems">—-Soulgems</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#addsoulgem">addsoulgem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#removesoulgem">removesoulgem</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#combat-states">—-Combat states</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#getweapondrawn">getweapondrawn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#getspellreadied">getspellreadied</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#getattacked">getattacked</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#hit-detection">—-Hit detection</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#hitonme">hitonme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#hitattemptonme">hitattemptonme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#getstandingpc">getstandingpc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#getstandingactor">getstandingactor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#hurtstandingactor">hurtstandingactor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#getcollidingpc">getcollidingpc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#getcollidingactor">getcollidingactor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#hurtcollidingactor">hurtcollidingactor</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#teleporting">—-Teleporting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#enableteleporting">enableteleporting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#disableteleporting">disableteleporting</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#show-game-infos">—-Show game infos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#showvars-sv">showvars, sv</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#show">show</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#betacomment-bc">betacomment, bc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#ori">ori</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#showscenegraph-ssg">showscenegraph, ssg</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#levitation">—-Levitation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#disablelevitation">disablelevitation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#enablelevitation">enablelevitation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#leveled-lists">—-Leveled lists</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#addtolevcreature">addtolevcreature</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#removefromlevcreature">removefromlevcreature</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#addtolevitem">addtolevitem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#removefromlevitem">removefromlevitem</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#various">—-Various</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#xbox">xbox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#getsquareroot">getsquareroot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#getwindspeed">getwindspeed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#getcurrenttime">getcurrenttime</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#fall">fall</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#dontsaveobject">dontsaveobject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#repairedonme">repairedonme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#wakeuppc">wakeuppc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Categorical Function List Openmw/Sky/index.html">Sky</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Sky/Sky.html">—-Moons</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Sky/Sky.html#turnmoonwhite">turnmoonwhite</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Sky/Sky.html#turnmoonred">turnmoonred</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Sky/Sky.html#getmasserphase">getmasserphase</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Sky/Sky.html#getsecundaphase">getsecundaphase</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Sky/Sky.html#weather">—-Weather</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Sky/Sky.html#changeweather">changeweather</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Sky/Sky.html#getcurrentweather">getcurrentweather</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Sky/Sky.html#modregion">modregion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Sky/Sky.html#togglesky-ts">togglesky, ts</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Categorical Function List Openmw/Sound/index.html">Sound</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Sound/Sound.html">—-Music</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Sound/Sound.html#streammusic">streammusic</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Sound/Sound.html#sounds">—-Sounds</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Sound/Sound.html#stopsound">stopsound</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Sound/Sound.html#getsoundplaying">getsoundplaying</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Sound/Sound.html#playsound">playsound</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Sound/Sound.html#playsoundvp">playsoundvp</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Sound/Sound.html#playsound3d">playsound3d</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Sound/Sound.html#playsound3dvp">playsound3dvp</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Sound/Sound.html#playloopsound3d">playloopsound3d</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Sound/Sound.html#playloopsound3dvp">playloopsound3dvp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Sound/Sound.html#talkings">—-Talkings</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Sound/Sound.html#say">say</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Sound/Sound.html#saydone">saydone</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Categorical Function List Openmw/Transformation/index.html">Transformation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Transformation/Transformation.html">—-Activating</a></li>
 </ul>
 </li>
 </ul>
@@ -440,7 +555,7 @@ and quite naturally it’s implications on gameplay mechanics.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="engine MCP features.html" class="btn btn-neutral float-right" title="MCP features" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="TES3MP scripting overview.html" class="btn btn-neutral float-right" title="TES3MP Scripting overview" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
     </div>

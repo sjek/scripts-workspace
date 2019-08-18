@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Activating &mdash; openmw mwscript  documentation</title>
+  <title>—-Activating &mdash; openmw mwscript  documentation</title>
   
 
   
@@ -80,8 +80,8 @@
             
             
               <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../TES3MP scripting overview.html">TES3MP Scripting overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../engine MCP features.html">MCP features</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../vanilla script functions uesp wiki.html">UESP</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../readme.html">Readme</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Categorical Function List Openmw</span></p>
@@ -94,30 +94,30 @@
 <li class="toctree-l1"><a class="reference internal" href="../Control/index.html">Control</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Gui/index.html">Gui</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Miscellaneous</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Activating</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">—-Activating</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#onactivate">onactivate</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#activate">activate</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#locking">Locking</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#locking">—-Locking</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#lock">lock</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#unlock">unlock</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#getlocked">getlocked</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#magic-effects">Magic effects</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#magic-effects">—-Magic effects</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#geteffect">geteffect</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#getspelleffects">getspelleffects</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#cast">cast</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#explodespell">explodespell</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#drop-functions">drop functions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#drop-functions">—-Drop functions</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#drop">drop</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#dropsoulgem">dropsoulgem</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#console-toggles">console toggles</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#console-toggles">—-Console toggles</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#togglecollisionboxes-tcb">togglecollisionboxes, tcb</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#togglecollisiongrid-tcg">togglecollisiongrid, tcg</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#togglewireframe-twf">togglewireframe, twf</a></li>
@@ -133,28 +133,93 @@
 <li class="toctree-l3"><a class="reference internal" href="#toggleactorspaths-tap">toggleactorspaths, tap</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#fading">Fading</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#fading">—-Fading</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#fadein">fadein</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#fadeout">fadeout</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#fadeto">fadeto</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#a">—-a</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id1">—-a</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id2">—-a</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">—-a</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id4">—-a</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id5">—-a</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id6">—-a</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id7">—-a</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#xbox">xbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#view-mode">—-View mode</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#pcforce1stperson">pcforce1stperson</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pcforce3rdperson">pcforce3rdperson</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pcget3rdperson">pcget3rdperson</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id8">—-a</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#teleporting">Teleporting</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id9">—-a</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#levitation">Levitation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#leveled-lists">Leveled lists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#player-state">—-Player state</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#getpcsleep">getpcsleep</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getpcjumping">getpcjumping</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getpctraveling">getpctraveling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getpcinjail">getpcinjail</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#movies">—-Movies</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#playbink">playbink</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#criminality">—-Criminality</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#payfine">payfine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#payfinethief">payfinethief</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gotojail">gotojail</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#soulgems">—-Soulgems</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#addsoulgem">addsoulgem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#removesoulgem">removesoulgem</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#combat-states">—-Combat states</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#getweapondrawn">getweapondrawn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getspellreadied">getspellreadied</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getattacked">getattacked</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#hit-detection">—-Hit detection</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#hitonme">hitonme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hitattemptonme">hitattemptonme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getstandingpc">getstandingpc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getstandingactor">getstandingactor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hurtstandingactor">hurtstandingactor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getcollidingpc">getcollidingpc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getcollidingactor">getcollidingactor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hurtcollidingactor">hurtcollidingactor</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#teleporting">—-Teleporting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#enableteleporting">enableteleporting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#disableteleporting">disableteleporting</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#show-game-infos">—-Show game infos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#showvars-sv">showvars, sv</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#show">show</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#betacomment-bc">betacomment, bc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ori">ori</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#showscenegraph-ssg">showscenegraph, ssg</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#levitation">—-Levitation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#disablelevitation">disablelevitation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#enablelevitation">enablelevitation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#leveled-lists">—-Leveled lists</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#addtolevcreature">addtolevcreature</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#removefromlevcreature">removefromlevcreature</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#addtolevitem">addtolevitem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#removefromlevitem">removefromlevitem</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#various">—-Various</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#xbox">xbox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getsquareroot">getsquareroot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getwindspeed">getwindspeed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getcurrenttime">getcurrenttime</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fall">fall</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dontsaveobject">dontsaveobject</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#repairedonme">repairedonme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#wakeuppc">wakeuppc</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -204,7 +269,7 @@
         
           <li><a href="index.html">Miscellaneous</a> &raquo;</li>
         
-      <li>Activating</li>
+      <li>—-Activating</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -224,7 +289,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="activating">
-<h1>Activating<a class="headerlink" href="#activating" title="Permalink to this headline">¶</a></h1>
+<h1>—-Activating<a class="headerlink" href="#activating" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="onactivate">
 <h2>onactivate<a class="headerlink" href="#onactivate" title="Permalink to this headline">¶</a></h2>
 </div>
@@ -233,7 +298,7 @@
 </div>
 </div>
 <div class="section" id="locking">
-<h1>Locking<a class="headerlink" href="#locking" title="Permalink to this headline">¶</a></h1>
+<h1>—-Locking<a class="headerlink" href="#locking" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="lock">
 <h2>lock<a class="headerlink" href="#lock" title="Permalink to this headline">¶</a></h2>
 </div>
@@ -245,7 +310,7 @@
 </div>
 </div>
 <div class="section" id="magic-effects">
-<h1>Magic effects<a class="headerlink" href="#magic-effects" title="Permalink to this headline">¶</a></h1>
+<h1>—-Magic effects<a class="headerlink" href="#magic-effects" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="geteffect">
 <h2>geteffect<a class="headerlink" href="#geteffect" title="Permalink to this headline">¶</a></h2>
 </div>
@@ -260,7 +325,7 @@
 </div>
 </div>
 <div class="section" id="drop-functions">
-<h1>drop functions<a class="headerlink" href="#drop-functions" title="Permalink to this headline">¶</a></h1>
+<h1>—-Drop functions<a class="headerlink" href="#drop-functions" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="drop">
 <h2>drop<a class="headerlink" href="#drop" title="Permalink to this headline">¶</a></h2>
 </div>
@@ -269,7 +334,7 @@
 </div>
 </div>
 <div class="section" id="console-toggles">
-<h1>console toggles<a class="headerlink" href="#console-toggles" title="Permalink to this headline">¶</a></h1>
+<h1>—-Console toggles<a class="headerlink" href="#console-toggles" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="togglecollisionboxes-tcb">
 <h2>togglecollisionboxes, tcb<a class="headerlink" href="#togglecollisionboxes-tcb" title="Permalink to this headline">¶</a></h2>
 </div>
@@ -311,7 +376,7 @@
 </div>
 </div>
 <div class="section" id="fading">
-<h1>Fading<a class="headerlink" href="#fading" title="Permalink to this headline">¶</a></h1>
+<h1>—-Fading<a class="headerlink" href="#fading" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="fadein">
 <h2>fadein<a class="headerlink" href="#fadein" title="Permalink to this headline">¶</a></h2>
 </div>
@@ -322,91 +387,176 @@
 <h2>fadeto<a class="headerlink" href="#fadeto" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
-<div class="section" id="a">
-<h1>—-a<a class="headerlink" href="#a" title="Permalink to this headline">¶</a></h1>
-<p>dontsaveobject
-pcforce1stperson
-pcforce3rdperson
-pcget3rdperson</p>
+<div class="section" id="view-mode">
+<h1>—-View mode<a class="headerlink" href="#view-mode" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="pcforce1stperson">
+<h2>pcforce1stperson<a class="headerlink" href="#pcforce1stperson" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="id1">
-<h1>—-a<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>getpcsleep
-getpcjumping
-wakeuppc</p>
+<div class="section" id="pcforce3rdperson">
+<h2>pcforce3rdperson<a class="headerlink" href="#pcforce3rdperson" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="id2">
-<h1>—-a<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h1>
-<p>playbink</p>
-</div>
-<div class="section" id="id3">
-<h1>—-a<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h1>
-<p>payfine
-payfinethief
-gotojail
-getpcinjail
-getpctraveling</p>
-</div>
-<div class="section" id="id4">
-<h1>—-a<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h1>
-<p>addsoulgem
-removesoulgem</p>
-</div>
-<div class="section" id="id5">
-<h1>—-a<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h1>
-<p>getattacked
-getweapondrawn
-getspellreadied
-repairedonme</p>
-</div>
-<div class="section" id="id6">
-<h1>—-a<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h1>
-<p>getstandingpc
-getstandingactor
-hurtstandingactor
-getcollidingpc
-getcollidingactor
-hurtcollidingactor</p>
-</div>
-<div class="section" id="id7">
-<h1>—-a<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="xbox">
-<h2>xbox<a class="headerlink" href="#xbox" title="Permalink to this headline">¶</a></h2>
-<p>getsquareroot
-getwindspeed
-getcurrenttime
-fall</p>
+<div class="section" id="pcget3rdperson">
+<h2>pcget3rdperson<a class="headerlink" href="#pcget3rdperson" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
-<div class="section" id="id8">
-<h1>—-a<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h1>
-<p>hitonme
-hitattemptonme</p>
+<div class="section" id="player-state">
+<h1>—-Player state<a class="headerlink" href="#player-state" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="getpcsleep">
+<h2>getpcsleep<a class="headerlink" href="#getpcsleep" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="getpcjumping">
+<h2>getpcjumping<a class="headerlink" href="#getpcjumping" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="getpctraveling">
+<h2>getpctraveling<a class="headerlink" href="#getpctraveling" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="getpcinjail">
+<h2>getpcinjail<a class="headerlink" href="#getpcinjail" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="movies">
+<h1>—-Movies<a class="headerlink" href="#movies" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="playbink">
+<h2>playbink<a class="headerlink" href="#playbink" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="criminality">
+<h1>—-Criminality<a class="headerlink" href="#criminality" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="payfine">
+<h2>payfine<a class="headerlink" href="#payfine" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="payfinethief">
+<h2>payfinethief<a class="headerlink" href="#payfinethief" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="gotojail">
+<h2>gotojail<a class="headerlink" href="#gotojail" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="soulgems">
+<h1>—-Soulgems<a class="headerlink" href="#soulgems" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="addsoulgem">
+<h2>addsoulgem<a class="headerlink" href="#addsoulgem" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="removesoulgem">
+<h2>removesoulgem<a class="headerlink" href="#removesoulgem" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="combat-states">
+<h1>—-Combat states<a class="headerlink" href="#combat-states" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="getweapondrawn">
+<h2>getweapondrawn<a class="headerlink" href="#getweapondrawn" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="getspellreadied">
+<h2>getspellreadied<a class="headerlink" href="#getspellreadied" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="getattacked">
+<h2>getattacked<a class="headerlink" href="#getattacked" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="hit-detection">
+<h1>—-Hit detection<a class="headerlink" href="#hit-detection" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="hitonme">
+<h2>hitonme<a class="headerlink" href="#hitonme" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="hitattemptonme">
+<h2>hitattemptonme<a class="headerlink" href="#hitattemptonme" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="getstandingpc">
+<h2>getstandingpc<a class="headerlink" href="#getstandingpc" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="getstandingactor">
+<h2>getstandingactor<a class="headerlink" href="#getstandingactor" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="hurtstandingactor">
+<h2>hurtstandingactor<a class="headerlink" href="#hurtstandingactor" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="getcollidingpc">
+<h2>getcollidingpc<a class="headerlink" href="#getcollidingpc" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="getcollidingactor">
+<h2>getcollidingactor<a class="headerlink" href="#getcollidingactor" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="hurtcollidingactor">
+<h2>hurtcollidingactor<a class="headerlink" href="#hurtcollidingactor" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 <div class="section" id="teleporting">
-<h1>Teleporting<a class="headerlink" href="#teleporting" title="Permalink to this headline">¶</a></h1>
-<p>enableteleporting
-disableteleporting</p>
+<h1>—-Teleporting<a class="headerlink" href="#teleporting" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="enableteleporting">
+<h2>enableteleporting<a class="headerlink" href="#enableteleporting" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="id9">
-<h1>—-a<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h1>
-<p>showvars, sv
-show
-betacomment, bc
-ori
-showscenegraph, ssg</p>
+<div class="section" id="disableteleporting">
+<h2>disableteleporting<a class="headerlink" href="#disableteleporting" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="show-game-infos">
+<h1>—-Show game infos<a class="headerlink" href="#show-game-infos" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="showvars-sv">
+<h2>showvars, sv<a class="headerlink" href="#showvars-sv" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="show">
+<h2>show<a class="headerlink" href="#show" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="betacomment-bc">
+<h2>betacomment, bc<a class="headerlink" href="#betacomment-bc" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="ori">
+<h2>ori<a class="headerlink" href="#ori" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="showscenegraph-ssg">
+<h2>showscenegraph, ssg<a class="headerlink" href="#showscenegraph-ssg" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 <div class="section" id="levitation">
-<h1>Levitation<a class="headerlink" href="#levitation" title="Permalink to this headline">¶</a></h1>
-<p>enablelevitation
-disablelevitation</p>
+<h1>—-Levitation<a class="headerlink" href="#levitation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="disablelevitation">
+<h2>disablelevitation<a class="headerlink" href="#disablelevitation" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="enablelevitation">
+<h2>enablelevitation<a class="headerlink" href="#enablelevitation" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 <div class="section" id="leveled-lists">
-<h1>Leveled lists<a class="headerlink" href="#leveled-lists" title="Permalink to this headline">¶</a></h1>
-<p>addtolevcreature
-removefromlevcreature
-addtolevitem
-removefromlevitem</p>
+<h1>—-Leveled lists<a class="headerlink" href="#leveled-lists" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="addtolevcreature">
+<h2>addtolevcreature<a class="headerlink" href="#addtolevcreature" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="removefromlevcreature">
+<h2>removefromlevcreature<a class="headerlink" href="#removefromlevcreature" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="addtolevitem">
+<h2>addtolevitem<a class="headerlink" href="#addtolevitem" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="removefromlevitem">
+<h2>removefromlevitem<a class="headerlink" href="#removefromlevitem" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="various">
+<h1>—-Various<a class="headerlink" href="#various" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="xbox">
+<h2>xbox<a class="headerlink" href="#xbox" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="getsquareroot">
+<h2>getsquareroot<a class="headerlink" href="#getsquareroot" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="getwindspeed">
+<h2>getwindspeed<a class="headerlink" href="#getwindspeed" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="getcurrenttime">
+<h2>getcurrenttime<a class="headerlink" href="#getcurrenttime" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="fall">
+<h2>fall<a class="headerlink" href="#fall" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="dontsaveobject">
+<h2>dontsaveobject<a class="headerlink" href="#dontsaveobject" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="repairedonme">
+<h2>repairedonme<a class="headerlink" href="#repairedonme" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="wakeuppc">
+<h2>wakeuppc<a class="headerlink" href="#wakeuppc" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 
 
