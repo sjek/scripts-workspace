@@ -1,0 +1,731 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>—-Attributes &mdash; openmw mwscript  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="Stats" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> openmw mwscript
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../TES3MP scripting overview.html">TES3MP Scripting overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engine MCP features.html">MCP features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../readme.html">Readme</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Categorical Function List Openmw</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../AI/index.html">AI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Animation/index.html">Animation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Container/index.html">Container</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dialogue/index.html">Dialogue</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cell/index.html">Cell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Control/index.html">Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gui/index.html">Gui</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Miscellaneous/index.html">Miscellaneous</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Sky/index.html">Sky</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Sound/index.html">Sound</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Transformation/index.html">Transformation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Stats</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">—-Attributes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#prefixes">—-prefixes:</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#set">set-</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#get">get-</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mod">mod-</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#strength">strength</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#intelligence">intelligence</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#willpower">willpower</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#agility">agility</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#speed">speed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#endurance">endurance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#personality">personality</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#luck">luck</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#dynamics">—-Dynamics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">—-prefixes:</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id2">Get-</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">Set-</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id4">Mod-</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#modcurrent">ModCurrent-</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#get-getratio">Get- - -Getratio</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#health">health</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fatigue">fatigue</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#magicka">magicka</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#skills">—-Skills</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id5">—-prefixes:</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id6">Get-</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id7">Set-</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id8">Mod-</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#defence">—-Defence</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#unarmored">unarmored</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lightarmor">lightarmor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mediumarmor">mediumarmor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#heavyarmor">heavyarmor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#block">block</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#offence">—-Offence</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#bluntweapon">bluntweapon</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#longblade">longblade</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#axe">axe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#spear">spear</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#shortblade">shortblade</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#marksman">marksman</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#handtohand">handtohand</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#magic">—-Magic</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#destruction">destruction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#alteration">alteration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#illusion">illusion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#conjuration">conjuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mysticism">mysticism</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#restoration">restoration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#enchant">enchant</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#alchemy">alchemy</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#others">—-Others</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#armorer">armorer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#security">security</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sneak">sneak</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#athletics">athletics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#acrobatics">acrobatics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mercantile">mercantile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#speechcraft">speechcraft</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#magic-effects">—-Magic effects</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id9">—-prefixes:</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id10">Get-</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id11">Set-</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id12">Mod-</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#resists">—-Resists</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#resistmagicka">resistmagicka</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#resistfire">resistfire</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#resistfrost">resistfrost</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#resistshock">resistshock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#resistpoison">resistpoison</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#resistparalysis">resistparalysis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#resistdisease">resistdisease</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#resistblight">resistblight</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#resistcorprus">resistcorprus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#resistnormalweapons">resistnormalweapons</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id13">—-Others</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#waterbreathing">waterbreathing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#waterwalking">waterwalking</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#swimspeed">swimspeed</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#chameleon">chameleon</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#invisible">invisible</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#silence">silence</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#blindness">blindness</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#paralysis">paralysis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#superjump">superjump</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#flying">flying</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#castpenalty">castpenalty</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#attackbonus">attackbonus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#defendbonus">defendbonus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#armorbonus">armorbonus</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#various">—-Various</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#resurrect">resurrect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ondeath">ondeath</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#onmurder">onmurder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#onknockout">onknockout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#faction">—-Faction</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#getpcrank">getpcrank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pcraiserank">pcraiserank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pclowerrank">pclowerrank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#raiserank">raiserank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lowerrank">lowerrank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pcexpell">pcexpell</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pcexpelled">pcexpelled</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pcclearexpelled">pcclearexpelled</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pcjoinfaction">pcjoinfaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#get-set-modpcfacrep">get-, set-, modpcfacrep</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#get-set-moddisposition">get-, set-, moddisposition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setlevel">setlevel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getlevel">getlevel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getstat">getstat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getdeadcount">getdeadcount</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getcommondisease">getcommondisease</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getblightdisease">getblightdisease</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getrace">getrace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#werewolf">—-werewolf</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#getwerewolfkills">getwerewolfkills</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#iswerewolf">iswerewolf</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#becomewerewolf">becomewerewolf</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#undowerewolf">undowerewolf</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#setwerewolfacrobatics">setwerewolfacrobatics</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">openmw mwscript</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Stats</a> &raquo;</li>
+        
+      <li>—-Attributes</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/Categorical Function List Openmw/Stats/Stats.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="attributes">
+<h1>—-Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="prefixes">
+<h2>—-prefixes:<a class="headerlink" href="#prefixes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="set">
+<h3>set-<a class="headerlink" href="#set" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="get">
+<h3>get-<a class="headerlink" href="#get" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="mod">
+<h3>mod-<a class="headerlink" href="#mod" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="strength">
+<h2>strength<a class="headerlink" href="#strength" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="intelligence">
+<h2>intelligence<a class="headerlink" href="#intelligence" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="willpower">
+<h2>willpower<a class="headerlink" href="#willpower" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="agility">
+<h2>agility<a class="headerlink" href="#agility" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="speed">
+<h2>speed<a class="headerlink" href="#speed" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="endurance">
+<h2>endurance<a class="headerlink" href="#endurance" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="personality">
+<h2>personality<a class="headerlink" href="#personality" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="luck">
+<h2>luck<a class="headerlink" href="#luck" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="dynamics">
+<h1>—-Dynamics<a class="headerlink" href="#dynamics" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>—-prefixes:<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id2">
+<h3>Get-<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id3">
+<h3>Set-<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id4">
+<h3>Mod-<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="modcurrent">
+<h3>ModCurrent-<a class="headerlink" href="#modcurrent" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="get-getratio">
+<h3>Get- - -Getratio<a class="headerlink" href="#get-getratio" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="health">
+<h2>health<a class="headerlink" href="#health" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="fatigue">
+<h2>fatigue<a class="headerlink" href="#fatigue" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="magicka">
+<h2>magicka<a class="headerlink" href="#magicka" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="skills">
+<h1>—-Skills<a class="headerlink" href="#skills" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id5">
+<h2>—-prefixes:<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id6">
+<h3>Get-<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id7">
+<h3>Set-<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id8">
+<h3>Mod-<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="defence">
+<h2>—-Defence<a class="headerlink" href="#defence" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="unarmored">
+<h3>unarmored<a class="headerlink" href="#unarmored" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="lightarmor">
+<h3>lightarmor<a class="headerlink" href="#lightarmor" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="mediumarmor">
+<h3>mediumarmor<a class="headerlink" href="#mediumarmor" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="heavyarmor">
+<h3>heavyarmor<a class="headerlink" href="#heavyarmor" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="block">
+<h3>block<a class="headerlink" href="#block" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="offence">
+<h2>—-Offence<a class="headerlink" href="#offence" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="bluntweapon">
+<h3>bluntweapon<a class="headerlink" href="#bluntweapon" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="longblade">
+<h3>longblade<a class="headerlink" href="#longblade" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="axe">
+<h3>axe<a class="headerlink" href="#axe" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="spear">
+<h3>spear<a class="headerlink" href="#spear" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="shortblade">
+<h3>shortblade<a class="headerlink" href="#shortblade" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="marksman">
+<h3>marksman<a class="headerlink" href="#marksman" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="handtohand">
+<h3>handtohand<a class="headerlink" href="#handtohand" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="magic">
+<h2>—-Magic<a class="headerlink" href="#magic" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="destruction">
+<h3>destruction<a class="headerlink" href="#destruction" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="alteration">
+<h3>alteration<a class="headerlink" href="#alteration" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="illusion">
+<h3>illusion<a class="headerlink" href="#illusion" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="conjuration">
+<h3>conjuration<a class="headerlink" href="#conjuration" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="mysticism">
+<h3>mysticism<a class="headerlink" href="#mysticism" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="restoration">
+<h3>restoration<a class="headerlink" href="#restoration" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="enchant">
+<h3>enchant<a class="headerlink" href="#enchant" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="alchemy">
+<h3>alchemy<a class="headerlink" href="#alchemy" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="others">
+<h2>—-Others<a class="headerlink" href="#others" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="armorer">
+<h3>armorer<a class="headerlink" href="#armorer" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="security">
+<h3>security<a class="headerlink" href="#security" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="sneak">
+<h3>sneak<a class="headerlink" href="#sneak" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="athletics">
+<h3>athletics<a class="headerlink" href="#athletics" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="acrobatics">
+<h3>acrobatics<a class="headerlink" href="#acrobatics" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="mercantile">
+<h3>mercantile<a class="headerlink" href="#mercantile" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="speechcraft">
+<h3>speechcraft<a class="headerlink" href="#speechcraft" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+</div>
+<div class="section" id="magic-effects">
+<h1>—-Magic effects<a class="headerlink" href="#magic-effects" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id9">
+<h2>—-prefixes:<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id10">
+<h3>Get-<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id11">
+<h3>Set-<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id12">
+<h3>Mod-<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="resists">
+<h2>—-Resists<a class="headerlink" href="#resists" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="resistmagicka">
+<h3>resistmagicka<a class="headerlink" href="#resistmagicka" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="resistfire">
+<h3>resistfire<a class="headerlink" href="#resistfire" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="resistfrost">
+<h3>resistfrost<a class="headerlink" href="#resistfrost" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="resistshock">
+<h3>resistshock<a class="headerlink" href="#resistshock" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="resistpoison">
+<h3>resistpoison<a class="headerlink" href="#resistpoison" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="resistparalysis">
+<h3>resistparalysis<a class="headerlink" href="#resistparalysis" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="resistdisease">
+<h3>resistdisease<a class="headerlink" href="#resistdisease" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="resistblight">
+<h3>resistblight<a class="headerlink" href="#resistblight" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="resistcorprus">
+<h3>resistcorprus<a class="headerlink" href="#resistcorprus" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="resistnormalweapons">
+<h3>resistnormalweapons<a class="headerlink" href="#resistnormalweapons" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="id13">
+<h2>—-Others<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="waterbreathing">
+<h3>waterbreathing<a class="headerlink" href="#waterbreathing" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="waterwalking">
+<h3>waterwalking<a class="headerlink" href="#waterwalking" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="swimspeed">
+<h3>swimspeed<a class="headerlink" href="#swimspeed" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="chameleon">
+<h3>chameleon<a class="headerlink" href="#chameleon" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="invisible">
+<h3>invisible<a class="headerlink" href="#invisible" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="silence">
+<h3>silence<a class="headerlink" href="#silence" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="blindness">
+<h3>blindness<a class="headerlink" href="#blindness" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="paralysis">
+<h3>paralysis<a class="headerlink" href="#paralysis" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="superjump">
+<h3>superjump<a class="headerlink" href="#superjump" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="flying">
+<h3>flying<a class="headerlink" href="#flying" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="castpenalty">
+<h3>castpenalty<a class="headerlink" href="#castpenalty" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="attackbonus">
+<h3>attackbonus<a class="headerlink" href="#attackbonus" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="defendbonus">
+<h3>defendbonus<a class="headerlink" href="#defendbonus" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="armorbonus">
+<h3>armorbonus<a class="headerlink" href="#armorbonus" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+</div>
+<div class="section" id="various">
+<h1>—-Various<a class="headerlink" href="#various" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="resurrect">
+<h2>resurrect<a class="headerlink" href="#resurrect" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="ondeath">
+<h2>ondeath<a class="headerlink" href="#ondeath" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="onmurder">
+<h2>onmurder<a class="headerlink" href="#onmurder" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="onknockout">
+<h2>onknockout<a class="headerlink" href="#onknockout" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="faction">
+<h2>—-Faction<a class="headerlink" href="#faction" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="getpcrank">
+<h3>getpcrank<a class="headerlink" href="#getpcrank" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="pcraiserank">
+<h3>pcraiserank<a class="headerlink" href="#pcraiserank" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="pclowerrank">
+<h3>pclowerrank<a class="headerlink" href="#pclowerrank" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="raiserank">
+<h3>raiserank<a class="headerlink" href="#raiserank" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="lowerrank">
+<h3>lowerrank<a class="headerlink" href="#lowerrank" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="pcexpell">
+<h3>pcexpell<a class="headerlink" href="#pcexpell" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="pcexpelled">
+<h3>pcexpelled<a class="headerlink" href="#pcexpelled" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="pcclearexpelled">
+<h3>pcclearexpelled<a class="headerlink" href="#pcclearexpelled" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="pcjoinfaction">
+<h3>pcjoinfaction<a class="headerlink" href="#pcjoinfaction" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="get-set-modpcfacrep">
+<h3>get-, set-, modpcfacrep<a class="headerlink" href="#get-set-modpcfacrep" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="get-set-moddisposition">
+<h2>get-, set-, moddisposition<a class="headerlink" href="#get-set-moddisposition" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="setlevel">
+<h2>setlevel<a class="headerlink" href="#setlevel" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="getlevel">
+<h2>getlevel<a class="headerlink" href="#getlevel" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="getstat">
+<h2>getstat<a class="headerlink" href="#getstat" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="getdeadcount">
+<h2>getdeadcount<a class="headerlink" href="#getdeadcount" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="getcommondisease">
+<h2>getcommondisease<a class="headerlink" href="#getcommondisease" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="getblightdisease">
+<h2>getblightdisease<a class="headerlink" href="#getblightdisease" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="getrace">
+<h2>getrace<a class="headerlink" href="#getrace" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="werewolf">
+<h2>—-werewolf<a class="headerlink" href="#werewolf" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="getwerewolfkills">
+<h3>getwerewolfkills<a class="headerlink" href="#getwerewolfkills" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="iswerewolf">
+<h3>iswerewolf<a class="headerlink" href="#iswerewolf" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="becomewerewolf">
+<h3>becomewerewolf<a class="headerlink" href="#becomewerewolf" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="undowerewolf">
+<h3>undowerewolf<a class="headerlink" href="#undowerewolf" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="setwerewolfacrobatics">
+<h3>setwerewolfacrobatics<a class="headerlink" href="#setwerewolfacrobatics" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Stats" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright CC0
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

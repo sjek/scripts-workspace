@@ -17,7 +17,7 @@ Script-workspace
    TES3MP scripting overview
    engine MCP features
    readme
-
+   Sources
 
 .. toctree::
    :maxdepth: 4
@@ -34,6 +34,7 @@ Script-workspace
    Categorical Function List Openmw/Sky/index
    Categorical Function List Openmw/Sound/index
    Categorical Function List Openmw/Transformation/index
+   Categorical Function List Openmw/Stats/index
 
 
 .. Alphacedical Scripting functions/index

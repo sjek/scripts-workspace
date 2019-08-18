@@ -1,0 +1,384 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Stats &mdash; openmw mwscript  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="—-Attributes" href="Stats.html" />
+    <link rel="prev" title="—-Scale" href="../Transformation/Transformation.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> openmw mwscript
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../TES3MP scripting overview.html">TES3MP Scripting overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../engine MCP features.html">MCP features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../readme.html">Readme</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Categorical Function List Openmw</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../AI/index.html">AI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Animation/index.html">Animation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Container/index.html">Container</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Dialogue/index.html">Dialogue</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Cell/index.html">Cell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Control/index.html">Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Gui/index.html">Gui</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Miscellaneous/index.html">Miscellaneous</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Sky/index.html">Sky</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Sound/index.html">Sound</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Transformation/index.html">Transformation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Stats</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html">—-Attributes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#dynamics">—-Dynamics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#skills">—-Skills</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#magic-effects">—-Magic effects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#various">—-Various</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">openmw mwscript</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Stats</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/Categorical Function List Openmw/Stats/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="stats">
+<h1>Stats<a class="headerlink" href="#stats" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Stats.html">—-Attributes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#prefixes">—-prefixes:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#set">set-</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#get">get-</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#mod">mod-</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#strength">strength</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#intelligence">intelligence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#willpower">willpower</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#agility">agility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#speed">speed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#endurance">endurance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#personality">personality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#luck">luck</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Stats.html#dynamics">—-Dynamics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#id1">—-prefixes:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#id2">Get-</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#id3">Set-</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#id4">Mod-</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#modcurrent">ModCurrent-</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#get-getratio">Get- - -Getratio</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#health">health</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#fatigue">fatigue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#magicka">magicka</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Stats.html#skills">—-Skills</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#id5">—-prefixes:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#id6">Get-</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#id7">Set-</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#id8">Mod-</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#defence">—-Defence</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#unarmored">unarmored</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#lightarmor">lightarmor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#mediumarmor">mediumarmor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#heavyarmor">heavyarmor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#block">block</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#offence">—-Offence</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#bluntweapon">bluntweapon</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#longblade">longblade</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#axe">axe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#spear">spear</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#shortblade">shortblade</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#marksman">marksman</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#handtohand">handtohand</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#magic">—-Magic</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#destruction">destruction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#alteration">alteration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#illusion">illusion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#conjuration">conjuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#mysticism">mysticism</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#restoration">restoration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#enchant">enchant</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#alchemy">alchemy</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#others">—-Others</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#armorer">armorer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#security">security</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#sneak">sneak</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#athletics">athletics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#acrobatics">acrobatics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#mercantile">mercantile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#speechcraft">speechcraft</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Stats.html#magic-effects">—-Magic effects</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#id9">—-prefixes:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#id10">Get-</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#id11">Set-</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#id12">Mod-</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#resists">—-Resists</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#resistmagicka">resistmagicka</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#resistfire">resistfire</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#resistfrost">resistfrost</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#resistshock">resistshock</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#resistpoison">resistpoison</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#resistparalysis">resistparalysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#resistdisease">resistdisease</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#resistblight">resistblight</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#resistcorprus">resistcorprus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#resistnormalweapons">resistnormalweapons</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#id13">—-Others</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#waterbreathing">waterbreathing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#waterwalking">waterwalking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#swimspeed">swimspeed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#chameleon">chameleon</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#invisible">invisible</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#silence">silence</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#blindness">blindness</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#paralysis">paralysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#superjump">superjump</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#flying">flying</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#castpenalty">castpenalty</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#attackbonus">attackbonus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#defendbonus">defendbonus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#armorbonus">armorbonus</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Stats.html#various">—-Various</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#resurrect">resurrect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#ondeath">ondeath</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#onmurder">onmurder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#onknockout">onknockout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#faction">—-Faction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#getpcrank">getpcrank</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#pcraiserank">pcraiserank</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#pclowerrank">pclowerrank</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#raiserank">raiserank</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#lowerrank">lowerrank</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#pcexpell">pcexpell</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#pcexpelled">pcexpelled</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#pcclearexpelled">pcclearexpelled</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#pcjoinfaction">pcjoinfaction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#get-set-modpcfacrep">get-, set-, modpcfacrep</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#get-set-moddisposition">get-, set-, moddisposition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#setlevel">setlevel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#getlevel">getlevel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#getstat">getstat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#getdeadcount">getdeadcount</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#getcommondisease">getcommondisease</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#getblightdisease">getblightdisease</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#getrace">getrace</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Stats.html#werewolf">—-werewolf</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#getwerewolfkills">getwerewolfkills</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#iswerewolf">iswerewolf</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#becomewerewolf">becomewerewolf</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#undowerewolf">undowerewolf</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Stats.html#setwerewolfacrobatics">setwerewolfacrobatics</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Stats.html" class="btn btn-neutral float-right" title="—-Attributes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../Transformation/Transformation.html" class="btn btn-neutral float-left" title="—-Scale" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright CC0
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

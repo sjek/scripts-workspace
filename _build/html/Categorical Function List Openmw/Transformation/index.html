@@ -35,7 +35,7 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="—-Activating" href="Transformation.html" />
+    <link rel="next" title="—-Scale" href="Transformation.html" />
     <link rel="prev" title="—-Music" href="../Sound/Sound.html" /> 
 </head>
 
@@ -98,7 +98,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../Sky/index.html">Sky</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Sound/index.html">Sound</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Transformation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Transformation.html">—-Activating</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Transformation.html">—-Scale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Transformation.html#angle">—-Angle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Transformation.html#rotation">—-Rotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Transformation.html#position">—-Position</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Transformation.html#placing">—-Placing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Transformation.html#resetting">—-Resetting</a></li>
 </ul>
 </li>
 </ul>
@@ -169,7 +174,46 @@
 <h1>Transformation<a class="headerlink" href="#transformation" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="Transformation.html">—-Activating</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Transformation.html">—-Scale</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Transformation.html#setscale">setscale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Transformation.html#getscale">getscale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Transformation.html#modscale">modscale</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Transformation.html#angle">—-Angle</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Transformation.html#setangle">setangle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Transformation.html#getangle">getangle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Transformation.html#getstartingangle">getstartingangle</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Transformation.html#rotation">—-Rotation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Transformation.html#rotate">rotate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Transformation.html#rotateworld">rotateworld</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Transformation.html#position">—-Position</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Transformation.html#setpos">setpos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Transformation.html#getpos">getpos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Transformation.html#getstartingpos">getstartingpos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Transformation.html#id1">position</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Transformation.html#positioncell">positioncell</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Transformation.html#move">move</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Transformation.html#moveworld">moveworld</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Transformation.html#placing">—-Placing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Transformation.html#placeitem">placeitem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Transformation.html#placeitemcell">placeitemcell</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Transformation.html#placeatpc">placeatpc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Transformation.html#placeatme">placeatme</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Transformation.html#resetting">—-Resetting</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Transformation.html#setatstart">setatstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Transformation.html#resetactors-ra">resetactors, ra</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Transformation.html#fixme">fixme</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -182,7 +226,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="Transformation.html" class="btn btn-neutral float-right" title="—-Activating" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="Transformation.html" class="btn btn-neutral float-right" title="—-Scale" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="../Sound/Sound.html" class="btn btn-neutral float-left" title="—-Music" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

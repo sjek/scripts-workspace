@@ -83,6 +83,7 @@
 <li class="toctree-l1"><a class="reference internal" href="TES3MP scripting overview.html">TES3MP Scripting overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="engine MCP features.html">MCP features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="readme.html">Readme</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sources.html">Sources</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Categorical Function List Openmw</span></p>
 <ul>
@@ -97,6 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Categorical Function List Openmw/Sky/index.html">Sky</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Categorical Function List Openmw/Sound/index.html">Sound</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Categorical Function List Openmw/Transformation/index.html">Transformation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Categorical Function List Openmw/Stats/index.html">Stats</a></li>
 </ul>
 
             
@@ -189,6 +191,7 @@ and quite naturally it’s implications on gameplay mechanics.</p>
 <li class="toctree-l1"><a class="reference internal" href="TES3MP scripting overview.html">TES3MP Scripting overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="engine MCP features.html">MCP features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="readme.html">Readme</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sources.html">Sources</a></li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
@@ -387,6 +390,11 @@ and quite naturally it’s implications on gameplay mechanics.</p>
 <li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#getspelleffects">getspelleffects</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#cast">cast</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#explodespell">explodespell</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#addspell">addspell</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#removespell">removespell</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#removespelleffects">removespelleffects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#removeeffects">removeeffects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#getspell">getspell</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#drop-functions">—-Drop functions</a><ul>
@@ -434,6 +442,7 @@ and quite naturally it’s implications on gameplay mechanics.</p>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#criminality">—-Criminality</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#get-set-modpccrimelevel">get-, set-, modpccrimelevel</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#payfine">payfine</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#payfinethief">payfinethief</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#gotojail">gotojail</a></li>
@@ -461,11 +470,6 @@ and quite naturally it’s implications on gameplay mechanics.</p>
 <li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#hurtcollidingactor">hurtcollidingactor</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#teleporting">—-Teleporting</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#enableteleporting">enableteleporting</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#disableteleporting">disableteleporting</a></li>
-</ul>
-</li>
 <li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#show-game-infos">—-Show game infos</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#showvars-sv">showvars, sv</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#show">show</a></li>
@@ -474,9 +478,14 @@ and quite naturally it’s implications on gameplay mechanics.</p>
 <li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#showscenegraph-ssg">showscenegraph, ssg</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#teleporting">—-Teleporting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#enableteleporting">enableteleporting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#disableteleporting">disableteleporting</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#levitation">—-Levitation</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#disablelevitation">disablelevitation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#enablelevitation">enablelevitation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#disablelevitation">disablelevitation</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Miscellaneous/Miscellaneous.html#leveled-lists">—-Leveled lists</a><ul>
@@ -540,7 +549,203 @@ and quite naturally it’s implications on gameplay mechanics.</p>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Categorical Function List Openmw/Transformation/index.html">Transformation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Transformation/Transformation.html">—-Activating</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Transformation/Transformation.html">—-Scale</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Transformation/Transformation.html#setscale">setscale</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Transformation/Transformation.html#getscale">getscale</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Transformation/Transformation.html#modscale">modscale</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Transformation/Transformation.html#angle">—-Angle</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Transformation/Transformation.html#setangle">setangle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Transformation/Transformation.html#getangle">getangle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Transformation/Transformation.html#getstartingangle">getstartingangle</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Transformation/Transformation.html#rotation">—-Rotation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Transformation/Transformation.html#rotate">rotate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Transformation/Transformation.html#rotateworld">rotateworld</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Transformation/Transformation.html#position">—-Position</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Transformation/Transformation.html#setpos">setpos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Transformation/Transformation.html#getpos">getpos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Transformation/Transformation.html#getstartingpos">getstartingpos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Transformation/Transformation.html#id1">position</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Transformation/Transformation.html#positioncell">positioncell</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Transformation/Transformation.html#move">move</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Transformation/Transformation.html#moveworld">moveworld</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Transformation/Transformation.html#placing">—-Placing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Transformation/Transformation.html#placeitem">placeitem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Transformation/Transformation.html#placeitemcell">placeitemcell</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Transformation/Transformation.html#placeatpc">placeatpc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Transformation/Transformation.html#placeatme">placeatme</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Transformation/Transformation.html#resetting">—-Resetting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Transformation/Transformation.html#setatstart">setatstart</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Transformation/Transformation.html#resetactors-ra">resetactors, ra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Transformation/Transformation.html#fixme">fixme</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Categorical Function List Openmw/Stats/index.html">Stats</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html">—-Attributes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#prefixes">—-prefixes:</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#set">set-</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#get">get-</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#mod">mod-</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#strength">strength</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#intelligence">intelligence</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#willpower">willpower</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#agility">agility</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#speed">speed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#endurance">endurance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#personality">personality</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#luck">luck</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#dynamics">—-Dynamics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#id1">—-prefixes:</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#id2">Get-</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#id3">Set-</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#id4">Mod-</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#modcurrent">ModCurrent-</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#get-getratio">Get- - -Getratio</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#health">health</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#fatigue">fatigue</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#magicka">magicka</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#skills">—-Skills</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#id5">—-prefixes:</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#id6">Get-</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#id7">Set-</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#id8">Mod-</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#defence">—-Defence</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#unarmored">unarmored</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#lightarmor">lightarmor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#mediumarmor">mediumarmor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#heavyarmor">heavyarmor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#block">block</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#offence">—-Offence</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#bluntweapon">bluntweapon</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#longblade">longblade</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#axe">axe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#spear">spear</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#shortblade">shortblade</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#marksman">marksman</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#handtohand">handtohand</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#magic">—-Magic</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#destruction">destruction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#alteration">alteration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#illusion">illusion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#conjuration">conjuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#mysticism">mysticism</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#restoration">restoration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#enchant">enchant</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#alchemy">alchemy</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#others">—-Others</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#armorer">armorer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#security">security</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#sneak">sneak</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#athletics">athletics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#acrobatics">acrobatics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#mercantile">mercantile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#speechcraft">speechcraft</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#magic-effects">—-Magic effects</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#id9">—-prefixes:</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#id10">Get-</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#id11">Set-</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#id12">Mod-</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#resists">—-Resists</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#resistmagicka">resistmagicka</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#resistfire">resistfire</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#resistfrost">resistfrost</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#resistshock">resistshock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#resistpoison">resistpoison</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#resistparalysis">resistparalysis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#resistdisease">resistdisease</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#resistblight">resistblight</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#resistcorprus">resistcorprus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#resistnormalweapons">resistnormalweapons</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#id13">—-Others</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#waterbreathing">waterbreathing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#waterwalking">waterwalking</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#swimspeed">swimspeed</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#chameleon">chameleon</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#invisible">invisible</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#silence">silence</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#blindness">blindness</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#paralysis">paralysis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#superjump">superjump</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#flying">flying</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#castpenalty">castpenalty</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#attackbonus">attackbonus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#defendbonus">defendbonus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#armorbonus">armorbonus</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#various">—-Various</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#resurrect">resurrect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#ondeath">ondeath</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#onmurder">onmurder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#onknockout">onknockout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#faction">—-Faction</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#getpcrank">getpcrank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#pcraiserank">pcraiserank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#pclowerrank">pclowerrank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#raiserank">raiserank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#lowerrank">lowerrank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#pcexpell">pcexpell</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#pcexpelled">pcexpelled</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#pcclearexpelled">pcclearexpelled</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#pcjoinfaction">pcjoinfaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#get-set-modpcfacrep">get-, set-, modpcfacrep</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#get-set-moddisposition">get-, set-, moddisposition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#setlevel">setlevel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#getlevel">getlevel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#getstat">getstat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#getdeadcount">getdeadcount</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#getcommondisease">getcommondisease</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#getblightdisease">getblightdisease</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#getrace">getrace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#werewolf">—-werewolf</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#getwerewolfkills">getwerewolfkills</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#iswerewolf">iswerewolf</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#becomewerewolf">becomewerewolf</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#undowerewolf">undowerewolf</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Categorical Function List Openmw/Stats/Stats.html#setwerewolfacrobatics">setwerewolfacrobatics</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
